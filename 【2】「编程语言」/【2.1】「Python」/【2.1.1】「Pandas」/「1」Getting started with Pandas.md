@@ -367,7 +367,7 @@ grouped = foo_bar.groupby(['A','B']).sum()
 grouped
 ```
 
-![截屏2021-01-25 上午10.04.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.04.56.png?token=AWS37JLBH3COPW53GLRD2GTBTH4P2)
+![截屏2021-01-25 上午10.04.56](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.04.56.png)
 
 ### 3.6 Time Series
 
@@ -378,7 +378,7 @@ rng = pd.date_range('1/1/2015', periods = 100, freq = 'S')
 rng[1:5]
 ```
 
-![截屏2021-01-25 上午10.07.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.07.40.png?token=AWS37JI37UPKRPNVNMTPS6LBTH4SM)
+![截屏2021-01-25 上午10.07.40](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.07.40.png)
 
 Now we'll use that to greate a time series, assigning a random integer to each element of the range:
 
@@ -387,15 +387,13 @@ time_series = pd.Series(np.random.randint(0, 500, len(rng)), index = rng)
 time_series.head()
 ```
 
-![截屏2021-01-25 上午10.17.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.17.05.png?token=AWS37JOBAHBANHTEBZCCSO3BTH436)
-
-Next, we'll resample the data by binning the one-second raws into minutes (and summing the associated values):
+![截屏2021-01-25 上午10.17.05](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.17.05.png)Next, we'll resample the data by binning the one-second raws into minutes (and summing the associated values):
 
 ```python
 time_series.resample('1Min').sum()
 ```
 
-![截屏2021-01-25 上午10.21.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.21.36.png?token=AWS37JPXPQNV5HXTEW373H3BTH46A)
+![截屏2021-01-25 上午10.21.36](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8A%E5%8D%8810.21.36.png)
 
 ### 3.7 Reading/Writing to files
 
@@ -486,7 +484,7 @@ Now to test that this function does the right thing:
 download_weather_month(2012, 1).head()
 ```
 
-![截屏2021-01-25 下午2.01.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.01.38.png?token=AWS37JKE2CTITSI2QGAGUADBTH5DS)
+![截屏2021-01-25 下午2.01.38](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.01.38.png)
 
 Woohoo! Now we can iteratively request all the months using a single line. This will take a little while to run.
 
@@ -506,7 +504,7 @@ This thing is long, so instead of printing out the whole thing, I'm just going t
 weather_2012.info()
 ```
 
-![截屏2021-01-25 下午2.03.55](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.03.55.png?token=AWS37JMULRRBTH7O76DD4MTBTH5DW)
+![截屏2021-01-25 下午2.03.55](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.03.55.png)
 
 And a quick reminder, if we wanted to save that data to a file:
 
@@ -527,7 +525,7 @@ import matplotlib.pyplot as plt
 plt.plot(df)
 ```
 
-![截屏2021-01-25 下午2.08.14](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.08.14.png?token=AWS37JLDJNCGKZGYZK6IHS3BTH5GQ)
+![截屏2021-01-25 下午2.08.14](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.08.14.png)
 
 ```python
 # nothing to see... in iPython you need to specify where the chart will display, usually it's in a new window
@@ -658,7 +656,7 @@ df_au[header_list[8]]=Area
 df_au
 ```
 
-![截屏2021-01-25 下午2.43.25](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.43.25.png?token=AWS37JO7QZ3ZQPO6FXW4B3DBTH5IK)
+![截屏2021-01-25 下午2.43.25](https://raw.githubusercontent.com/Peiyang-Felix/PicGo/Typora-DataContent/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%882.43.25.png)
 
 
 

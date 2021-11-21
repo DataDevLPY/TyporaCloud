@@ -23,7 +23,7 @@ unigram_tokens = tokenizer.tokenize(raw_text)
 print(unigram_tokens)
 ```
 
-![截屏2021-01-28 上午11.26.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%8811.26.26.png?token=AWS37JIOOBM4IMYTKP4WHPDBTIBZU)
+![截屏2021-01-28 上午11.26.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午11.26.26.png)
 
 ```python
 uni_voc = list(set(unigram_tokens))
@@ -45,7 +45,7 @@ mwe_tokens = mwe_tokenizer.tokenize(unigram_tokens)
 print(mwe_tokens)
 ```
 
-![截屏2021-01-28 上午11.32.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%8811.32.42.png?token=AWS37JMYILT7W3VRGRAMRS3BTIBZY)
+![截屏2021-01-28 上午11.32.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午11.32.42.png)
 
 ## 2. Stop Words Removal
 

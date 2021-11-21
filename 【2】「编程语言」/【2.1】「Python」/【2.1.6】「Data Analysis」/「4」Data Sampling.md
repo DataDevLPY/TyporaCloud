@@ -14,11 +14,11 @@ wine.head()
 
 ![截屏2021-02-01 上午11.58.32](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.58.32.png)
 
-![截屏2021-02-01 上午11.58.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.58.42.png?token=AWS37JIZQO25VEHIDIVHY3LBTIDD2)
+![截屏2021-02-01 上午11.58.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.58.42.png)
 
-![截屏2021-02-01 上午11.59.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.59.02.png?token=AWS37JOLP65DTVUUDB6XVM3BTIDD6)
+![截屏2021-02-01 上午11.59.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.59.02.png)
 
-![截屏2021-02-01 上午11.59.13](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.59.13.png?token=AWS37JMMVJMYGXLMNHXQ3IDBTIDEG)
+![截屏2021-02-01 上午11.59.13](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.59.13.png)
 
 
 

@@ -1,4 +1,4 @@
-## Introduction to Web Scraping 
+# Web Scraping
 
 We cover in this part scraping data from the web. Data can be presented in HTML, XML and API etc. Web scraping is the practice of using libraries to sift through a web page and gather the data that you need in a format most useful to you while at the same time preserving the structure of the data.
 
@@ -16,7 +16,9 @@ from bs4 import BeautifulSoup
 import re
 ```
 
-### Task 1 Extract a list of links on a Wikipedia page.
+
+
+## Task 1 Extract a list of links on a Wikipedia page.
 
 Instead of retrieving all the links existing in a Wikipedia article, we are interested in extracting links that point to other article pages. If you look at the source code of the following page
 
@@ -56,7 +58,7 @@ for link in bsobj.find("div", {"id": "bodyContent"}).findAll("a", href=re.compil
 
 ![截屏2021-01-31 上午10.20.12](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.20.12.png)
 
-### Task 2 Perform a random walk through a given webpate.
+## Task 2 Perform a random walk through a given webpate.
 
 Assume that we will find a random object in Wikipedia that is linked to "Kevin Bacon" with, so-called "Six Degrees of Wikipedia". In other words, the task is to find two subjects linked by a chain containing no more than six subjects (including the two original subjects).
 
@@ -88,21 +90,21 @@ while len(links) > 0 and count < 5:
     count = count + 1
 ```
 
-![截屏2021-01-31 上午10.35.39](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.35.39.png?token=AWS37JPD547SQFGOX3WTD33BTIBEU)
+![截屏2021-01-31 上午10.35.39](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.35.39.png)
 
 ```python
 links[random.randint(0, len(links)-1)].attrs["href"]
 ```
 
-![截屏2021-01-31 上午10.36.16](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.36.16.png?token=AWS37JKA23PWFGQPF3W5GCDBTIBE2)
+![截屏2021-01-31 上午10.36.16](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.36.16.png)
 
 ```python
 random.randint(0, len(links)-1)
 ```
 
-![截屏2021-01-31 上午10.37.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.37.02.png?token=AWS37JP6BP63XKYNMOB5HJ3BTIBE6)
+![截屏2021-01-31 上午10.37.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.37.02.png)
 
-### Task 3 Crawl the Entire Wikipedia website
+## Task 3 Crawl the Entire Wikipedia website
 
 The general approach to an exhaustive site crawl is to start with the root, i.e., the home page of a website. Here, we will start with
 
@@ -118,7 +120,7 @@ pages = set()
 
 
 
-## Note: add a terminating condition in your code, for example,
+# Note: add a terminating condition in your code, for example,
 
 ```python
     len(pages) < 10
@@ -145,9 +147,11 @@ def getLinks(pageUrl):
 getLinks("")
 ```
 
-![截屏2021-01-31 上午10.40.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.40.48.png?token=AWS37JPM2JSH3IHOWXO4ARLBTIBFK)
+![截屏2021-01-31 上午10.40.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.40.48.png)
 
-### Task 4 Collect data across the Wikipedia site
+
+
+## Task 4 Collect data across the Wikipedia site
 
 One purpose of traversing all the the links is to extract data. The best practice is to look at a few pages from the side and determine the patterns. By looking at a handful of Wikipedia pages both articles and non-articles pages, the following pattens can be identified:
 
@@ -182,7 +186,7 @@ bsObj = BeautifulSoup(html, "html.parser")
 bsObj
 ```
 
-![截屏2021-01-31 上午10.43.20](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.43.20.png?token=AWS37JPTCT6JUIQC7CFTGEDBTIBFQ)
+![截屏2021-01-31 上午10.43.20](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.43.20.png)
 
 ```python
 def getLinks(pageUrl):
@@ -208,7 +212,7 @@ def getLinks(pageUrl):
 
 
 
-### Task 5 API access
+## Task 5 API access
 
 In addition to HTML format, data is commonly found on the web through public APIs. We use the 'requests' package ([http://docs.python-requests.org](http://docs.python-requests.org/)) to call APIs using Python. In the following example, we call a public API for collecting weather data.
 
@@ -223,7 +227,7 @@ response= requests.get(url)
 response
 ```
 
-![截屏2021-01-31 上午10.45.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.45.58.png?token=AWS37JJJUTHQS4N636T53PLBTIBF2)
+![截屏2021-01-31 上午10.45.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.45.58.png)
 
 The response object contains GET query response. A successfull one has a value of 200. we need to parse the response with json to extract the information.
 
@@ -232,14 +236,14 @@ The response object contains GET query response. A successfull one has a value o
 print (response.status_code)
 ```
 
-![截屏2021-01-31 上午10.46.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.46.44.png?token=AWS37JJKK5KTEAFRQWSJS7LBTIBGA)
+![截屏2021-01-31 上午10.46.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.46.44.png)
 
 ```python
 # response.content is text
 print (type(response.content))
 ```
 
-![截屏2021-01-31 上午10.46.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.46.56.png?token=AWS37JL2ZD264BIZDHUUU7TBTIBGK)
+![截屏2021-01-31 上午10.46.56](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.46.56.png)
 
 ```python
 #response.json() converts the content to json 
@@ -247,19 +251,19 @@ data = response.json()
 print (type(data))
 ```
 
-![截屏2021-01-31 上午10.47.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.47.18.png?token=AWS37JKAXSKJ6Q6DKSCLQLLBTIBGO)
+![截屏2021-01-31 上午10.47.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.47.18.png)
 
 ```python
 data.keys()
 ```
 
-![截屏2021-01-31 上午10.47.54](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.47.54.png?token=AWS37JNXO2YDTUVB476TP7DBTIBGU)
+![截屏2021-01-31 上午10.47.54](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.47.54.png)
 
 ```python
 data
 ```
 
-![截屏2021-01-31 上午10.48.16](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-31%20%E4%B8%8A%E5%8D%8810.48.16.png?token=AWS37JLQ2JZXOTL2XGG5BMDBTIBG4)
+![截屏2021-01-31 上午10.48.16](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.48.16.png)
 
 
 

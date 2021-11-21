@@ -1,36 +1,36 @@
-![截屏2021-02-01 上午11.43.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.43.37.png?token=AWS37JNFVGUUDDB7SM3CNL3BTIC3U)
+![截屏2021-02-01 上午11.43.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.43.37.png)
 
-![截屏2021-02-01 上午11.43.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.43.52.png?token=AWS37JORCWSCA3EJ2HSC2HTBTIC3Y)
+![截屏2021-02-01 上午11.43.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.43.52.png)
 
-![截屏2021-02-01 上午11.44.06](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.44.06.png?token=AWS37JJ66KNFBTOUXIHM4ITBTIC34)
+![截屏2021-02-01 上午11.44.06](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.06.png)
 
-![截屏2021-02-01 上午11.44.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.44.22.png?token=AWS37JNCXJMNEKAXVF2XE3TBTIC4M)
+![截屏2021-02-01 上午11.44.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.22.png)
 
-![截屏2021-02-01 上午11.44.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.44.40.png?token=AWS37JJWOMXUPD52H2HKEOTBTIC4S)
+![截屏2021-02-01 上午11.44.40](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.40.png)
 
-![截屏2021-02-01 上午11.44.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.44.52.png?token=AWS37JMGVBXCAMRKVILNN2DBTIC46)
+![截屏2021-02-01 上午11.44.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.52.png)
 
 ![截屏2021-02-01 上午11.45.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.09.png)
 
-![截屏2021-02-01 上午11.45.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.45.22.png?token=AWS37JML2NO5OGYODA7464TBTIC5Q)
+![截屏2021-02-01 上午11.45.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.22.png)
 
-![截屏2021-02-01 上午11.45.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.45.35.png?token=AWS37JIPFR5CLMR3HJBONZLBTIC5S)
+![截屏2021-02-01 上午11.45.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.35.png)
 
-![截屏2021-02-01 上午11.45.47](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.45.47.png?token=AWS37JI3NLKMSCKYTMTYQN3BTIC54)
+![截屏2021-02-01 上午11.45.47](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.47.png)
 
-![截屏2021-02-01 上午11.45.59](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.45.59.png?token=AWS37JNDEJ42SZRHWUTFEETBTIC6A)
-
-
-
-![截屏2021-02-01 上午11.46.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.46.17.png?token=AWS37JO3XDODYOFWFKR4NT3BTIC6Q)
+![截屏2021-02-01 上午11.45.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.59.png)
 
 
 
-![截屏2021-02-01 上午11.46.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.46.31.png?token=AWS37JI4WLWQ6APSE77IWMLBTIC7C)
+![截屏2021-02-01 上午11.46.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.46.17.png)
 
 
 
-![截屏2021-02-01 上午11.46.49](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.46.49.png?token=AWS37JL4FYVPHOII72XBVV3BTIC7A)
+![截屏2021-02-01 上午11.46.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.46.31.png)
+
+
+
+![截屏2021-02-01 上午11.46.49](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.46.49.png)
 
 
 
@@ -68,7 +68,7 @@ plot()
 plt.show()
 ```
 
-![截屏2021-02-01 上午11.47.21](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.47.21.png?token=AWS37JPDTSMN5GYWK62FO4TBTIC7S)
+![截屏2021-02-01 上午11.47.21](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.47.21.png)
 
 #### The plot above includes the wine datapoints on all three different scales:
 
@@ -105,9 +105,9 @@ plt.tight_layout()
 plt.show()
 ```
 
-![截屏2021-02-01 上午11.48.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.48.02.png?token=AWS37JLKPR3SAX6GAT5SJ4LBTIC7U)
+![截屏2021-02-01 上午11.48.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.48.02.png)
 
-![截屏2021-02-01 上午11.48.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.48.17.png?token=AWS37JNOFWXQU5VRCZK3OVDBTIC72)
+![截屏2021-02-01 上午11.48.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.48.17.png)
 
 ![截屏2021-02-01 上午11.48.28](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.48.28.png)
 
@@ -119,7 +119,7 @@ Another way to reshape data is to perform data transformation. We will display a
 
 
 
-![截屏2021-02-01 上午11.48.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.48.50.png?token=AWS37JONCTC5HS2WZ2YKDRTBTIDAI)
+![截屏2021-02-01 上午11.48.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.48.50.png)
 
 
 
@@ -127,7 +127,7 @@ Another way to reshape data is to perform data transformation. We will display a
 plt.scatter(data["BMR(W)"], data["Mass(g)"]) # before
 ```
 
-![截屏2021-02-01 上午11.49.14](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.49.14.png?token=AWS37JKVPR65ZL4466CTMXDBTIDA2)
+![截屏2021-02-01 上午11.49.14](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.49.14.png)
 
 ### So, which transformation type will suit this data?
 
@@ -141,19 +141,19 @@ The implementation of Root transformation is given as follows. You need to finis
 
 ### 3.1 Root transformation:[¶](http://localhost:8889/notebooks/Desktop/FIT5196 Data Wrangling/week 11/Tutorial/tutorial_11_A/Data Normalisation and Transformation.ipynb#3.1-Root-transformation:)
 
-![截屏2021-02-01 上午11.49.39](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.49.39.png?token=AWS37JI2G6UXWZGHNNL6HPTBTIDBK)
+![截屏2021-02-01 上午11.49.39](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.49.39.png)
 
 ![截屏2021-02-01 上午11.50.27](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.50.27.png)
 
 
 
-![截屏2021-02-01 上午11.50.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.50.40.png?token=AWS37JKVYVQOIXQF2TAUNDLBTIDBQ)
+![截屏2021-02-01 上午11.50.40](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.50.40.png)
 
-![截屏2021-02-01 上午11.51.23](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.51.23.png?token=AWS37JLDNKFW4THVXKSIVBLBTIDBS)
+![截屏2021-02-01 上午11.51.23](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.51.23.png)
 
-![截屏2021-02-01 上午11.51.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.51.42.png?token=AWS37JLBKH7CXBKNYPGTEPDBTIDB4)
+![截屏2021-02-01 上午11.51.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.51.42.png)
 
-![截屏2021-02-01 上午11.52.11](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8811.52.11.png?token=AWS37JL7SHCRJO2HD4B7VYTBTIDCQ)
+![截屏2021-02-01 上午11.52.11](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.52.11.png)
 
 ![截屏2021-02-01 上午11.52.21](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.52.21.png)
 

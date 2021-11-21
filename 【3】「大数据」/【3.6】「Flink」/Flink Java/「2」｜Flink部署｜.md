@@ -47,7 +47,7 @@
 
 ![截屏2021-07-24 下午4.30.57](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-07-24 下午4.30.57.png)
 
-![截屏2021-07-24 下午4.48.40](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-07-24 下午4.48.40.png)
+![截屏2021-07-24 下午4.48.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-07-24%20%E4%B8%8B%E5%8D%884.48.40.png?token=AWS37JIXRMREKNTBODN6Z5LBTION2)
 
 ![截屏2021-07-24 下午4.49.11](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-07-24 下午4.49.11.png)
 

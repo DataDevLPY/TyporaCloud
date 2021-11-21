@@ -45,7 +45,7 @@ print ("Vocabulary size: ",len(vocab),"\nTotal number of tokens: ", len(words), 
 "\nLexical diversity: ", lexical_diversity)
 ```
 
-![截屏2021-01-28 下午2.30.32](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8B%E5%8D%882.30.32.png?token=AWS37JM3WDBWS4JIXDXJRD3BTIB26)
+![截屏2021-01-28 下午2.30.32](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 下午2.30.32.png)
 
 ### 1.2. Removing the Most and Less Frequent Words
 
@@ -58,7 +58,7 @@ fd_1 = FreqDist(words)
 fd_1.plot(25, cumulative=True)
 ```
 
-![截屏2021-01-28 下午2.44.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8B%E5%8D%882.44.58.png?token=AWS37JPVUN7SV37ZAUQ7RZDBTIB24)
+![截屏2021-01-28 下午2.44.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 下午2.44.58.png)
 
 ```python
 words_2 = list(chain.from_iterable([set(value) for value in tokenized_reuters.values()]))
@@ -124,7 +124,7 @@ ylabel('Word Frequency')
 grid(True)
 ```
 
-![截屏2021-01-28 下午4.48.53](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8B%E5%8D%884.48.53.png?token=AWS37JOALWAZFUXJWJ26DDDBTIB3K)
+![截屏2021-01-28 下午4.48.53](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 下午4.48.53.png)
 
 ```python
 lessFreqWords = set(fd_3.hapaxes())
@@ -152,7 +152,7 @@ print ("Minimun document length:", np.min(lens))
 print ("Standard deviation of document length:", np.std(lens))
 ```
 
-![截屏2021-01-28 下午4.49.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8B%E5%8D%884.49.44.png?token=AWS37JP75IPDGTSP7NWEX3DBTIB3W)
+![截屏2021-01-28 下午4.49.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 下午4.49.44.png)
 
 ## 3. Saving Pre-processed Text to a File
 

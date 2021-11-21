@@ -43,14 +43,14 @@ print('\tTab')
 print(r'\tTab')
 ```
 
-![截屏2021-01-25 下午9.02.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%889.02.17.png?token=AWS37JOWMINIA7JLI72JVYDBTIAOM)
+![截屏2021-01-25 下午9.02.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.02.17.png)
 
 ```python
 print('This is a \nnew line')
 print(r'This is a \nnew line')
 ```
 
-![截屏2021-01-25 下午9.03.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%889.03.03.png?token=AWS37JIWCQY5WZIH3U6Y4ZLBTIAOU)
+![截屏2021-01-25 下午9.03.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.03.03.png)
 
 ```python
 str1 = re.findall('\\t','Please find \t')
@@ -60,7 +60,7 @@ str2 = re.findall('\t','Please find \t')
 print(str2)
 ```
 
-![截屏2021-01-25 下午9.04.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%889.04.42.png?token=AWS37JLT7BGDPUUBU2UIBB3BTIAPA)
+![截屏2021-01-25 下午9.04.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.04.42.png)
 
 ```python
 urls = '''
@@ -78,7 +78,7 @@ for match in matches:
     # match.group(1)
 ```
 
-![截屏2021-01-25 下午9.53.23](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%889.53.23.png?token=AWS37JJVYVJOJBPF6BS4UKDBTIAPM)
+![截屏2021-01-25 下午9.53.23](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.53.23.png)
 
 ```python
 def date(pattern, m):
@@ -111,7 +111,7 @@ date(regex, "29/05/2019")
 date(regex, "31/06/2019")
 ```
 
-![截屏2021-01-25 下午10.06.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%8810.06.02.png?token=AWS37JO6XP24YXQH76XFXQLBTIAP2)
+![截屏2021-01-25 下午10.06.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午10.06.02.png)
 
 ## 3. Extract IPs, dates, and email address with regular expressions
 

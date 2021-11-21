@@ -4,11 +4,11 @@
 
 
 
-![截屏2021-08-31 下午8.39.46](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-08-31 下午8.39.46.png)
+![截屏2021-08-31 下午8.39.46](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-08-31%20%E4%B8%8B%E5%8D%888.39.46.png?token=AWS37JIWAZSVQRHPU4QJ7R3BTIOVQ)
 
 
 
-![截屏2021-08-31 下午9.23.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-08-31 下午9.23.43.png)
+![截屏2021-08-31 下午9.23.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-08-31%20%E4%B8%8B%E5%8D%889.23.43.png?token=AWS37JLY2GXEFTUUELSNL4TBTIOVW)
 
 ```java
 package com.peiyang.apitest.window;
@@ -75,7 +75,7 @@ public class WindowTest4_EventTimeWindow {
 
 
 
-![截屏2021-08-31 下午9.57.30](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-08-31 下午9.57.30.png)
+![截屏2021-08-31 下午9.57.30](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-08-31%20%E4%B8%8B%E5%8D%889.57.30.png?token=AWS37JMNKMHYUW64RVG5ZILBTIOWC)
 
 ![截屏2021-08-31 下午10.02.34](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-08-31 下午10.11.28.png)
 

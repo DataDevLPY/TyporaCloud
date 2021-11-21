@@ -1,10 +1,10 @@
-## Data Discretization
+# Data Discretization
 
-### Binning:
+# Binning:
 
 Binning aims to discretise continuous values into discrete bins. We explain in the following different ways for implementing binning with Python.
 
-### A. Using the digitize() method:
+## A. Using the digitize() method:
 
 ```python
 import numpy as np
@@ -25,19 +25,19 @@ len(bins), bins # there are 11 bin boundaries or 'edges', i.e. 10 bins
 # 0 to 0.1... 0.9, 1.0 i.e. 10 bins, it's tidier
 ```
 
-![截屏2021-02-01 上午9.37.41](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.37.41.png?token=AWS37JJVIVO6LZG23B6RWCLBTIAVU)
+![截屏2021-02-01 上午9.37.41](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.37.41.png)
 
 ```python
 data.min(), data.max(), data.mean(), data.std()
 ```
 
-![截屏2021-02-01 上午9.39.11](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.39.11.png?token=AWS37JIXYPSVMNXAGTPKCZ3BTIAV4)
+![截屏2021-02-01 上午9.39.11](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.39.11.png)
 
 ```python
 digitized # so the 100 values are now group into 10 bins
 ```
 
-![截屏2021-02-01 上午9.48.29](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.48.29.png?token=AWS37JLHGYRQRDJOUZVTMBTBTIAV6)
+![截屏2021-02-01 上午9.48.29](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.48.29.png)
 
 
 
@@ -54,27 +54,27 @@ df.DigBin.value_counts().sort_index()
 # and there are the 10 bins,change the seed above from '1234' to something else to see 
 ```
 
-![截屏2021-02-01 上午9.51.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.51.01.png?token=AWS37JLWQFPWGE5COOIJISLBTIAWE)
+![截屏2021-02-01 上午9.51.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.51.01.png)
 
 ```python
 df.head()
 ```
 
-![截屏2021-02-01 上午9.51.25](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.51.25.png?token=AWS37JPIL57IS6XRF3KSXNTBTIAWO)
+![截屏2021-02-01 上午9.51.25](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.51.25.png)
 
 ```python
 df.sort_values("Data")
 # df.sort_values("DigBin").head()
 ```
 
-![截屏2021-02-01 上午9.51.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.51.57.png?token=AWS37JMJOOVFV2DQKJLHULTBTIAW2)
+![截屏2021-02-01 上午9.51.57](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.51.57.png)
 
 ```python
 # so all the little numbers ended up in bin 1, all the big ones in bin 10:
 df.sort_values("DigBin").tail()
 ```
 
-![截屏2021-02-01 上午9.52.27](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.52.27.png?token=AWS37JILSM27PULIM6TZKH3BTIAXC)
+![截屏2021-02-01 上午9.52.27](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.52.27.png)
 
 ```python
 %matplotlib inline
@@ -82,11 +82,11 @@ df.hist() # now we can see before and after (left to right), should have the sam
 # note the x scale 0..12 vs 0..1.0
 ```
 
-![截屏2021-02-01 上午9.54.33](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.54.33.png?token=AWS37JJBLH5R6VVMGZ7O56LBTIAXK)
+![截屏2021-02-01 上午9.54.33](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.54.33.png)
 
 
 
-### B. Histograms...
+## B. Histograms...
 
 You can also use histogram to do binning for you:
 
@@ -95,11 +95,9 @@ binH = (np.histogram(data, bins, weights = data)[0] / np.histogram(data, bins)[0
 len(binH), binH # where binH is he mean of the values in each bin
 ```
 
-![截屏2021-02-01 上午9.55.28](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%889.55.28.png?token=AWS37JPXPTMMNZ3ILQVWLELBTIAXY)
+![截屏2021-02-01 上午9.55.28](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午9.55.28.png)
 
-
-
-### C. Using scipy:
+## C. Using scipy:
 
 ```python
 # import numpy as np
@@ -110,7 +108,7 @@ binS = binned_statistic(data, data, bins = 10, range = (0, 1))[0]
 
 
 
-![截屏2021-02-01 上午10.00.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.00.35.png?token=AWS37JPXTU7TC6G66BSZUOLBTIAYC)
+![截屏2021-02-01 上午10.00.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.00.35.png)
 
 
 
@@ -120,9 +118,9 @@ bc, be, bn = binned_statistic(data, None, statistic = 'count', bins = 10)
 
 ![截屏2021-02-01 上午10.01.06](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.01.06.png)
 
-![截屏2021-02-01 上午10.01.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.01.19.png?token=AWS37JKLGZAQ53OMZ446LC3BTIAYS)
+![截屏2021-02-01 上午10.01.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.01.19.png)
 
-![截屏2021-02-01 上午10.01.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.01.40.png?token=AWS37JJ4SDB73ESC43VBPCLBTIAYW)
+![截屏2021-02-01 上午10.01.40](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.01.40.png)
 
 ```
 df["SciBin"] = bn # put side by side with the previous df
@@ -130,9 +128,7 @@ df["SciBin"] = bn # put side by side with the previous df
 
 
 
-### D. Using Pandas Cut
-
-
+## D. Using Pandas Cut
 
 ## Example: ages dataset
 
@@ -148,23 +144,23 @@ cats = pd.cut(ages, bins)
 cats
 ```
 
-![截屏2021-02-01 上午10.07.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.07.26.png?token=AWS37JJZJGGDN5GO2SJU5ULBTIAZA)
+![截屏2021-02-01 上午10.07.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.07.26.png)
 
 
 
-![截屏2021-02-01 上午10.07.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.07.43.png?token=AWS37JOY5O6MPGJJPYYJ53LBTIAZI)
+![截屏2021-02-01 上午10.07.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.07.43.png)
 
 which side is closed can be changed
 
-![截屏2021-02-01 上午10.10.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.10.44.png?token=AWS37JP7P2YRVQ5FJ4OWFX3BTIAZM)
+![截屏2021-02-01 上午10.10.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.10.44.png)
 
 If you pass cut an integer number of bins instead of explicit bin edges, it will compute equal-length bins based on the minimum and maximum values in the data. Consider the case of some uniformly distributed data chopped into tenths same data as above, 100 randoms
 
-![截屏2021-02-01 上午10.12.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.12.00.png?token=AWS37JI3YRJEL3NCZSFXOMDBTIA2M)
+![截屏2021-02-01 上午10.12.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.12.00.png)
 
 A closely related function, qcut, bins the data based on sample quantiles. Depending on the distribution of the data, using cut will not usually result in each bin having the same number of data points. Since qcut uses sample quantiles instead, by definition you will obtain roughly equal-size bins:
 
-![截屏2021-02-01 上午10.13.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-02-01%20%E4%B8%8A%E5%8D%8810.13.57.png?token=AWS37JJQA75B26VCB5YLAMLBTIA2W)
+![截屏2021-02-01 上午10.13.57](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.13.57.png)
 
 
 

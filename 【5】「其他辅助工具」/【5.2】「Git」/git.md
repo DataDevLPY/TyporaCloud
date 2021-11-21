@@ -184,6 +184,8 @@ git merge hot_fix
 
 
 ```
-git 
+git add .
+git commit -m ""
+git push
 ```
 

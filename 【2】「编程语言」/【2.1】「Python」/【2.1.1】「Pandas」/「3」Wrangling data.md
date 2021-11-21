@@ -17,7 +17,7 @@ df['split'].str.extract("Incident(.*)involving")
 # use the extract method on the str
 ```
 
-![截屏2021-01-25 下午4.41.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%884.41.52.png?token=AWS37JIGAPBYOX6YSLFMHBDBTH6GK)
+![截屏2021-01-25 下午4.41.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.41.52.png)
 
 ### But we want planes in a new column, we can create one called 'extract' like this:
 
@@ -25,7 +25,7 @@ df['split'].str.extract("Incident(.*)involving")
 df.insert(1, 'extract', df['split'].str.extract("Incident (.*) involving"), expand=True)
 ```
 
-![截屏2021-01-25 下午4.47.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%884.47.51.png?token=AWS37JI5GJGV4KTFFWAJV5TBTH6GM)
+![截屏2021-01-25 下午4.47.51](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.47.51.png)
 
 ```python
 # and repeat to get the aircraft type 
@@ -44,7 +44,7 @@ df = df.fillna(method = 'pad') # magic, take the previous value (not NaN) and fi
 # http://pandas.pydata.org/pandas-docs/stable/missing_data.html#filling-missing-values-fillna
 ```
 
-![截屏2021-01-25 下午4.54.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%884.54.43.png?token=AWS37JJNRZOGYENNWSTOO3TBTH6HC)
+![截屏2021-01-25 下午4.54.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.54.43.png)
 
 ## Step 4 Remove the index row
 
@@ -56,7 +56,7 @@ We need to delete all the 'incident' rows, they have served their purpose and ar
 df = df[df['split'].str.contains("Incident") == False]
 ```
 
-![截屏2021-01-25 下午4.58.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%884.58.00.png?token=AWS37JIYOXN7JW7MSLWCTWDBTH6HU)
+![截屏2021-01-25 下午4.58.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.58.00.png)
 
 ## Now to 'unfold', there are several options
 
@@ -69,7 +69,7 @@ data.head() # 58 records, good, but lost plane type, bad
 # where's 'extract1' - can we have multiple indexes or have to put that data back in?
 ```
 
-![截屏2021-01-25 下午5.07.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.07.03.png?token=AWS37JMQ6552ALQAVKHQJXLBTH6IC)
+![截屏2021-01-25 下午5.07.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.07.03.png)
 
 ```python
 # solution: make the function a copy, x = x
@@ -78,7 +78,7 @@ data.head() # 58 records, good, but lost plane type, bad
 data = pd.pivot_table(df, index=["extract","extract1"], columns = 'split', values = 'split1', aggfunc = 'max') 
 ```
 
-![截屏2021-01-25 下午5.09.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.09.45.png?token=AWS37JKGZQC5OS45S3TSXY3BTH6IW)
+![截屏2021-01-25 下午5.09.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.09.45.png)
 
 
 
@@ -86,7 +86,7 @@ data = pd.pivot_table(df, index=["extract","extract1"], columns = 'split', value
 data.reset_index()
 ```
 
-![截屏2021-01-25 下午5.11.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.11.19.png?token=AWS37JOGKCPCHIECDGONXL3BTH6JG)
+![截屏2021-01-25 下午5.11.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.11.19.png)
 
 
 
@@ -101,7 +101,7 @@ data.reset_index()
 data[['Crew','Passengers']].plot(x='Crew', y='Passengers', kind='scatter')
 ```
 
-![截屏2021-01-25 下午5.15.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.15.09.png?token=AWS37JJO6U5KUD4XCYBHEOTBTH6KU)
+![截屏2021-01-25 下午5.15.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.15.09.png)
 
 ## Plotting non-numeric data
 
@@ -109,7 +109,7 @@ data[['Crew','Passengers']].plot(x='Crew', y='Passengers', kind='scatter')
 data['Phase'].value_counts().plot(kind='bar')
 ```
 
-![截屏2021-01-25 下午5.20.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.20.37.png?token=AWS37JNQOQNO33QIXVBYQCDBTH6LG)
+![截屏2021-01-25 下午5.20.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.20.37.png)
 
 
 
@@ -140,13 +140,13 @@ with open('AirCrashes.csv','r') as infile:
 text
 ```
 
-![截屏2021-01-25 下午5.30.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.30.43.png?token=AWS37JLPM4HDD54T7G437PLBTH6LQ)
+![截屏2021-01-25 下午5.30.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.30.43.png)
 
 ```python
 print(text)
 ```
 
-![截屏2021-01-25 下午5.31.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.31.31.png?token=AWS37JIXHF7BCX272IB3V53BTH6LU)
+![截屏2021-01-25 下午5.31.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.31.31.png)
 
 ## Step 2 Tidy up the raw data file
 
@@ -177,7 +177,7 @@ Now we import the dataset to pandas.
 pd.read_csv('AirCrashes_fixed.csv', header = None).head()
 ```
 
-![截屏2021-01-25 下午5.39.28](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-25%20%E4%B8%8B%E5%8D%885.39.28.png?token=AWS37JPTSPO2R33GQZDCN4DBTH6MW)
+![截屏2021-01-25 下午5.39.28](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.39.28.png)
 
 ## Step 4 Transpose each observation from long to wide and append all observations
 
@@ -209,7 +209,7 @@ for chunk in chunky_data:
 master
 ```
 
-![截屏2021-01-25 下午5.44.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/截屏2021-01-25 下午5.44.51.png?token=AWS37JKLHY57EOVDWIXUG73BTH6NC)
+![截屏2021-01-25 下午5.44.51](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.44.51.png)
 
 ```python
 column_headers = data[0].unique().tolist()  # Get the data again

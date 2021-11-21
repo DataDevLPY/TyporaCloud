@@ -71,3 +71,4 @@ TSV: Tab Separated Values Software: Microsoft Excel, Open Office Calc, and Googl
 - pdftable: A tool for extracting tables from PDF files, it uses pdfminer to get information on the locations of text elements.
 - slate: A small Python module that wraps pdfminer's API.
 - Tabula: A simple tool for extracting data tables out of PDF files
+- 

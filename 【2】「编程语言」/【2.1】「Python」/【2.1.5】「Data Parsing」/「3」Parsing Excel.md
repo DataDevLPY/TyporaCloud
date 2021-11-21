@@ -23,7 +23,7 @@ excel_data = pd.ExcelFile('SOWC 2014 Stat Tables_Table 2.xlsx')
 excel_data.sheet_names
 ```
 
-![截屏2021-01-28 上午7.15.14](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%887.15.14.png?token=AWS37JITATWQJTUB4XXUEMLBTICHY)
+![截屏2021-01-28 上午7.15.14](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午7.15.14.png)
 
 ```python
 # excel_data is an excel object
@@ -33,20 +33,20 @@ df = excel_data.parse('Table 2 ')
 df.head(100)
 ```
 
-![截屏2021-01-28 上午7.17.04](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%887.17.04.png?token=AWS37JJSFOV4QU445WNWSALBTICIE)
+![截屏2021-01-28 上午7.17.04](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午7.17.04.png)
 
 ```python
 df.shape
 ```
 
-![截屏2021-01-28 上午7.18.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%887.18.09.png?token=AWS37JISTLFT55SHFPU6SADBTICIM)
+![截屏2021-01-28 上午7.18.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午7.18.09.png)
 
 ```python
 df.drop(['Unnamed: 2','Unnamed: 3'], 1)
 df.shape
 ```
 
-![截屏2021-01-28 上午7.19.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%887.19.19.png?token=AWS37JIJRK333XN77H7U3PTBTICIO)
+![截屏2021-01-28 上午7.19.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午7.19.19.png)
 
 ```python
 df = df.dropna(0, how = 'all')
@@ -75,7 +75,7 @@ df.drop(['TABLE 2. NUTRITION'], axis = 1, inplace = True)
 df.columns = list(range(len(df.columns))) 
 ```
 
-![截屏2021-01-28 上午7.40.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%887.40.18.png?token=AWS37JODWQ7Y5I43V3YNEILBTICI2)
+![截屏2021-01-28 上午7.40.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午7.40.18.png)
 
 
 
@@ -95,7 +95,7 @@ for col_idx in range(1, 24, 2):
 df.head()
 ```
 
-![截屏2021-01-28 上午7.44.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%887.44.00.png?token=AWS37JPH5HDPCG2JYARN63LBTICJG)
+![截屏2021-01-28 上午7.44.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午7.44.00.png)
 
 ```python
 # What will range(1,24,2) give to us?
@@ -108,7 +108,7 @@ for col_idx in range(1, 24, 2):
 df.head()
 ```
 
-![截屏2021-01-28 上午7.44.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%887.44.36.png?token=AWS37JP4STV4CMVCAPN5J63BTICJG)
+![截屏2021-01-28 上午7.44.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午7.44.36.png)
 
 ```python
 df.columns = ["Low birthweight (%)", \

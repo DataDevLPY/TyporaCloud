@@ -19,13 +19,13 @@ df1.info()
 df1.describe(include=['O']) # 'O' for Objects
 ```
 
-![截屏2021-01-30 上午10.20.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-30%20%E4%B8%8A%E5%8D%8810.20.42.png?token=AWS37JIIB243TADR7VZWULLBTIDH4)
+![截屏2021-01-30 上午10.20.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.20.42.png)
 
 ```python
 df1.isnull().sum()
 ```
 
-![截屏2021-01-30 上午10.21.06](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-30%20%E4%B8%8A%E5%8D%8810.21.06.png?token=AWS37JMU6P5WOZVCC4JWNDDBTIDIC)
+![截屏2021-01-30 上午10.21.06](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.21.06.png)
 
 ## Task 2 investigate with missing values for ages
 
@@ -42,19 +42,19 @@ df1['age'].value_counts()
 df1[df1['age'].isnull()].head() # look at some
 ```
 
-![截屏2021-01-30 上午10.27.13](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-30%20%E4%B8%8A%E5%8D%8810.27.13.png?token=AWS37JM6LX6AARTOM2HT74TBTIDIG)
+![截屏2021-01-30 上午10.27.13](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.27.13.png)
 
 ```python
 df1.boxplot(by = 'pclass')
 ```
 
-![截屏2021-01-30 上午10.27.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-30%20%E4%B8%8A%E5%8D%8810.27.50.png?token=AWS37JL5ICH65NZDOZLWGB3BTIDII)
+![截屏2021-01-30 上午10.27.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.27.50.png)
 
 ```python
 df1.loc[:,['age','pclass']].boxplot(by = 'pclass')
 ```
 
-![截屏2021-01-30 上午10.28.34](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-30%20%E4%B8%8A%E5%8D%8810.28.34.png?token=AWS37JMWJVP5NSHLV6QAXA3BTIDIW)
+![截屏2021-01-30 上午10.28.34](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.28.34.png)
 
 
 

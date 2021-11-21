@@ -1,6 +1,6 @@
 
 
-![截屏2021-09-02 下午10.01.29](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-09-02 下午10.01.29.png)
+![截屏2021-09-02 下午10.01.29](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-02%20%E4%B8%8B%E5%8D%8810.01.29.png?token=AWS37JLTYXDWVOGCFCBNK3TBTIOWW)
 
 
 
@@ -16,7 +16,7 @@
 
 
 
-![截屏2021-09-02 下午10.15.05](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-09-02 下午10.15.05.png)
+![截屏2021-09-02 下午10.15.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-02%20%E4%B8%8B%E5%8D%8810.15.05.png?token=AWS37JPIMDCVGZOHNTJLSRTBTIOWY)
 
 
 
@@ -89,7 +89,7 @@ public class stateTest1_operatorState {
 
 
 
-![截屏2021-09-04 上午2.01.38](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-09-04 上午2.01.38.png)
+![截屏2021-09-04 上午2.01.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-04%20%E4%B8%8A%E5%8D%882.01.38.png?token=AWS37JPBT6M45BLPCQRCYL3BTIOXC)
 
 ```java
 package com.peiyang.apitest.state;
@@ -220,9 +220,9 @@ public class WindowTest3 {
 
 
 
-![截屏2021-09-07 下午8.17.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-09-07 下午8.17.31.png)
+![截屏2021-09-07 下午8.17.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-07%20%E4%B8%8B%E5%8D%888.17.31.png?token=AWS37JNI56ABFTFSSKY2R4DBTIOXW)
 
-![截屏2021-09-07 下午8.18.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-09-07 下午8.18.00.png)
+![截屏2021-09-07 下午8.18.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-07%20%E4%B8%8B%E5%8D%888.18.00.png?token=AWS37JOKH567AJ6J6MAEQV3BTIOXM)
 
  
 

@@ -11,7 +11,7 @@ You can alo print out the Beautifulsoup object by calling the prettify() functio
 print(btree.prettify())
 ```
 
-![截屏2021-01-28 上午10.05.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%8810.05.31.png?token=AWS37JJAS6ZWD745OCVDSYLBTICJ6)
+![截屏2021-01-28 上午10.05.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.05.31.png)
 
 It is easy to figure out information we would like to extract is stored in the following tags
 
@@ -31,14 +31,14 @@ Each record is stored in " ". To extract information from those tags, except for
 featuretags = btree.find_all("featurename")
 ```
 
-![截屏2021-01-28 上午10.06.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%8810.06.42.png?token=AWS37JLQNC5DU6STTHNKMPTBTICKA)
+![截屏2021-01-28 上午10.06.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.06.42.png)
 
 ```python
 for feature in featuretags:
 		print(feature.string)
 ```
 
-![截屏2021-01-28 上午10.08.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%8810.08.26.png?token=AWS37JPBDF6SO3APRIZJ2P3BTICKS)
+![截屏2021-01-28 上午10.08.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.08.26.png)
 
 ```python
 featurenames = [feature.string for feature in btree.find_all("featurename")]
@@ -67,7 +67,7 @@ df.index.name = 'ID'
 df.head()
 ```
 
-![截屏2021-01-28 上午10.11.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%8810.11.36.png?token=AWS37JIKNC5SHRFQCMUANGLBTICK2)
+![截屏2021-01-28 上午10.11.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.11.36.png)
 
 ## Loading and Exploring an XML file
 
@@ -107,7 +107,7 @@ for child in root[0][0]:
 		print(child)
 ```
 
-![截屏2021-01-28 上午10.25.59](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-01-28%20%E4%B8%8A%E5%8D%8810.25.59.png?token=AWS37JILGIDIWOVY3U62S3LBTICLE)
+![截屏2021-01-28 上午10.25.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.25.59.png)
 
 ```python
 for elem in tree.iter():
