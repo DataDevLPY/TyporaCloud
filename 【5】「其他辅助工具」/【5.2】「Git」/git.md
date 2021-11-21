@@ -2,7 +2,7 @@
 
 ---------
 
-![image-20210713182951298](/Users/peiyang/Library/Application Support/typora-user-images/image-20210713182951298.png)
+![image-20210713182951298](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220000834.png?token=AWS37JM54K7VXKNSW75SWO3BTJWUE)
 
 ------
 
@@ -56,7 +56,7 @@ cat .gitconfig
 cat ~/.gitconfig
 ```
 
-![image-20210713183020915](/Users/peiyang/Library/Application Support/typora-user-images/image-20210713183020915.png)
+![image-20210713183020915](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220000426.png?token=AWS37JPIZMXBLRLIZOU5BIDBTJWUS)
 
 --------
 

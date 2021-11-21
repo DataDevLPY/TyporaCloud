@@ -23,7 +23,7 @@ where se.cnty = 'US' and se.st='OR';
 
 静态分区必须出现在动态分区之前。
 
-![Screen Shot 2021-04-01 at 8.42.12 PM](/Users/peiyang/Library/Application Support/typora-user-images/Screen Shot 2021-04-01 at 8.42.12 PM.png)
+![Screen Shot 2021-04-01 at 8.42.12 PM](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220100921.png?token=AWS37JKXKSVJD4GQGBNGBJ3BTJ5U6)
 
 ```
 insert overwrite table employees

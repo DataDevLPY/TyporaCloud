@@ -26,7 +26,7 @@
 
 RDD create
 
- ![截屏2021-01-16 下午9.01.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.01.37.png)
+ ![截屏2021-01-16 下午9.01.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220112621.png?token=AWS37JN3M3MQGOIIXIXD4JLBTJ7D6)
 
 
 
@@ -36,73 +36,73 @@ RDD operation
 
    **filter()**
 
-   ![截屏2021-01-16 下午9.02.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.02.48.png)
+   ![截屏2021-01-16 下午9.02.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220112185.png?token=AWS37JIDSV3P7SAT5IUSKJLBTJ7EI)
 
    **map()**
 
-   ​		![截屏2021-01-16 下午9.03.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.03.22.png)
+   ​		![截屏2021-01-16 下午9.03.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220112264.png?token=AWS37JN66IDK3RE45NRR2STBTJ7EO)
 
    **flatMap()**
 
-   ​		![截屏2021-01-16 下午9.03.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.03.58.png)
+   ​		![截屏2021-01-16 下午9.03.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220112520.png?token=AWS37JKUIRRVE7W7BFNM35LBTJ7E6)
 
    **distinct()**
 
-   ​		![截屏2021-01-16 下午9.04.47](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.04.47.png)
+   ​		![截屏2021-01-16 下午9.04.47](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220112334.png?token=AWS37JLBTJZFBSW2LBESRIDBTJ7FQ)
 
    **union()**
 
-   ​		![截屏2021-01-16 下午9.05.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.05.09.png)
+   ​		![截屏2021-01-16 下午9.05.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220113882.png?token=AWS37JKHNFD75IE6NNOHRJLBTJ7F6)
 
    **intersection()**
 
-   ​		![截屏2021-01-16 下午9.05.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.05.37.png)
+   ​		![截屏2021-01-16 下午9.05.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220113375.png?token=AWS37JITECYWDECJME675NTBTJ7HI)
 
    **subtract()**
 
-   ​		![截屏2021-01-16 下午9.05.57](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.05.57.png)
+   ​		![截屏2021-01-16 下午9.05.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220113056.png?token=AWS37JJ4ATUTJSBBFZ5QPUDBTJ7GE)
 
    **cartesian()**
 
-   ​		![截屏2021-01-16 下午9.06.28](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.06.28.png)		
+   ​		![截屏2021-01-16 下午9.06.28](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220113854.png?token=AWS37JIWBKD5MOBXB3Y5V7LBTJ7GU)		
 
 2. motion
 
    **collect()**
 
-   ​		![截屏2021-01-16 下午9.07.46](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.07.46.png)
+   ​		![截屏2021-01-16 下午9.07.46](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220113583.png?token=AWS37JIJEUARY547MDKADQLBTJ7IS)
 
    **count()**
 
-   ​		![截屏2021-01-16 下午9.08.05](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.08.05.png)
+   ​		![截屏2021-01-16 下午9.08.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220113662.png?token=AWS37JJWWUAHQWZWKYVLQL3BTJ7IW)
 
    **countByValue()**
 
-   ​		![截屏2021-01-16 下午9.08.24](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.08.24.png)
+   ​		![截屏2021-01-16 下午9.08.24](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114226.png?token=AWS37JLK6NP47OKZV6Z7CVLBTJ7JK)
 
    **take()**
 
-   ​		![截屏2021-01-16 下午9.09.16](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.09.16.png)
+   ​		![截屏2021-01-16 下午9.09.16](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114124.png?token=AWS37JIJ2QAEJXNBAE6X623BTJ7JO)
 
    **top()**
 
-   ​		![截屏2021-01-16 下午9.09.38](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.09.38.png)
+   ​		![截屏2021-01-16 下午9.09.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114480.png?token=AWS37JPGONILIC3F64SBYVLBTJ7J2)
 
    **takeOrdered()**
 
-   ​		![截屏2021-01-16 下午9.10.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.10.01.png)
+   ​		![截屏2021-01-16 下午9.10.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114808.png?token=AWS37JN4JNRR7BIXCASD2RDBTJ7JW)
 
    **reduce()**
 
-   ​		![截屏2021-01-16 下午9.10.23](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.10.23.png)
+   ​		![截屏2021-01-16 下午9.10.23](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114012.png?token=AWS37JIEQI7QZOUQJHW6J5LBTJ7KI)
 
    **fold()**
 
-   ​		![截屏2021-01-16 下午9.11.41](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.11.41.png)
+   ​		![截屏2021-01-16 下午9.11.41](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114846.png?token=AWS37JKNRO2R5HGPEYZZALLBTJ7KO)
 
    **aggregate()**
 
-   ​		![截屏2021-01-16 下午9.12.08](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午9.12.08.png)
+   ​		![截屏2021-01-16 下午9.12.08](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114951.png?token=AWS37JK6EDCWEHGMG3742SDBTJ7KY)
 
 
 

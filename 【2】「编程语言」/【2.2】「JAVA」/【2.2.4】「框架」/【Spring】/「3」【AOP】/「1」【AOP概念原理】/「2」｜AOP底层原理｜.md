@@ -10,13 +10,13 @@
 
 ​		-- 创建接口实现类代理对象，增强类的方法
 
-​			![image-20210708142841691](/Users/peiyang/Library/Application Support/typora-user-images/image-20210708142841691.png)
+​			![image-20210708142841691](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220043965.png?token=AWS37JJAMQI52EDLY4HQMK3BTJ3W2)
 
 ​		第二种 没有接口情况，使用CGLIB动态代理
 
 ​		-- 创建子类的代理对象，增强类的方法 
 
-![image-20210708142854371](/Users/peiyang/Library/Application Support/typora-user-images/image-20210708142854371.png)
+![image-20210708142854371](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220043175.png?token=AWS37JPNVURQNXTZZSRSZJ3BTJ3XW)
 
 
 

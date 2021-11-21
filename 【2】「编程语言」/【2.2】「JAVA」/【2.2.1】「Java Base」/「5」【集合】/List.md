@@ -232,7 +232,7 @@ class ListArray{
 
 
 
-![截屏2021-06-18 下午8.05.29](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-18 下午8.05.29.png)
+![截屏2021-06-18 下午8.05.29](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220032951.png?token=AWS37JLSDLCMPNARB3NAARTBTJ2NI)
 
 
 

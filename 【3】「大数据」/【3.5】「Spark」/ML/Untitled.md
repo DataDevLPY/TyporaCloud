@@ -16,7 +16,7 @@ plt.xlabel("attack")
 plt.title('Relationship about attack and PID')
 ```
 
-![截屏2021-01-18 下午6.58.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午6.58.43.png)
+![截屏2021-01-18 下午6.58.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220110720.png?token=AWS37JMA6PRV5F6Y4TGHTRDBTJ62W)
 
 
 
@@ -30,7 +30,7 @@ plt.xlabel("MEM")
 plt.title('Relationship about attack and MEM')
 ```
 
-![截屏2021-01-18 下午6.59.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午6.59.09.png)
+![截屏2021-01-18 下午6.59.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220110515.png?token=AWS37JMK5EBENONBZPXPVMDBTJ626)
 
 ```python
 import matplotlib.pylab as plt
@@ -48,7 +48,7 @@ plt.xlabel("attack")
 plt.title('Relationship about attack and PRI')
 ```
 
-![截屏2021-01-18 下午6.59.41](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午6.59.41.png)
+![截屏2021-01-18 下午6.59.41](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220110150.png?token=AWS37JK7MTEJWTUJYHWNUGTBTJ63Q)
 
 
 

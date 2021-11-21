@@ -68,7 +68,7 @@ for center in centers:
     print(center)
 ```
 
-![截屏2021-01-16 下午12.40.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午12.40.45.png)
+![截屏2021-01-16 下午12.40.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220106278.png?token=AWS37JJJ7LOQPP4M7MNC453BTJ6NO)
 
 
 
@@ -120,7 +120,7 @@ predictions = model.transform(scaler_data)
 predictions.groupby('prediction').count().show()
 ```
 
-![截屏2021-01-16 下午8.29.55](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午8.29.55.png)
+![截屏2021-01-16 下午8.29.55](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220106041.png?token=AWS37JNOWSYNHKFHXWMQJBLBTJ6NY)
 
 
 
@@ -171,7 +171,7 @@ for k in range(2,10):
     print('No of clusters:',k,'Silhouette Score:',silhouette)
 ```
 
-![截屏2021-01-16 下午8.48.04](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-16 下午8.48.04.png)
+![截屏2021-01-16 下午8.48.04](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220106106.png?token=AWS37JM3IZA57AEMFCQXVODBTJ6OA)
 
 ```python
 #Visualizing the silhouette scores in a plot

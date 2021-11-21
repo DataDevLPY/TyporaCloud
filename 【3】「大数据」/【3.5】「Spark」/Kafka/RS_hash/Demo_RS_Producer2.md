@@ -42,4 +42,4 @@ for e in range(100):
     sleep(2)
 ```
 
-![截屏2021-01-22 下午10.04.12](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午10.04.12.png)
+![截屏2021-01-22 下午10.04.12](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220103927.png?token=AWS37JKGSSI7KJVUWUCHV6TBTJ6BU)

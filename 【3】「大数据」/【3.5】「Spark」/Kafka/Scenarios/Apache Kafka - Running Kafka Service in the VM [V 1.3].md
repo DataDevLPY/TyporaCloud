@@ -40,7 +40,7 @@ Uses of Kafka are multiple. Here are a few use-cases that could help you to figu
 
 ### 1.3 Kafka Concepts
 
-Let’s discuss some core Kafka concepts.![截屏2021-01-22 下午7.54.15](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午7.54.15.png)
+Let’s discuss some core Kafka concepts.![截屏2021-01-22 下午7.54.15](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220104833.png?token=AWS37JKS2NPD57A26RZTZMDBTJ6FE)
 
 #### Topics
 

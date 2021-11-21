@@ -37,14 +37,14 @@ df1= pd.DataFrame({'Student_ID': ['1', '2', '3', '4'],
 df1
 ```
 
-![截屏2021-01-31 下午4.04.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.04.19.png)
+![截屏2021-01-31 下午4.04.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017692.png?token=AWS37JKLQ2MIKA2SYIULCLTBTJYUG)
 
 ```python
 df = pd.DataFrame([{'Student':'1','team':2},{'Student':'2','team':2}])
 df
 ```
 
-![截屏2021-01-31 下午4.04.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.04.58.png)
+![截屏2021-01-31 下午4.04.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017475.png?token=AWS37JI5Z5BDWNHJTNOIR4TBTJYUI)
 
 #### Create a second dataframe
 
@@ -56,7 +56,7 @@ df2= pd.DataFrame({'Student_ID': ['4', '5', '6', '7','8'],
 df2
 ```
 
-![截屏2021-01-31 下午4.06.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.06.17.png)
+![截屏2021-01-31 下午4.06.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017766.png?token=AWS37JJSB45AA3X62NWUGFLBTJYUS)
 
 #### Create a third dataframe
 
@@ -67,7 +67,7 @@ df3= pd.DataFrame({'Student_ID': ['9', '10', '11', '12'],
 df3
 ```
 
-![截屏2021-01-31 下午4.10.23](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.10.23.png)
+![截屏2021-01-31 下午4.10.23](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017499.png?token=AWS37JOI4THAM3JMEOI2N5TBTJYUY)
 
 #### Join the two dataframes along rows
 
@@ -76,7 +76,7 @@ concat_1_2= pd.concat([df1,df2])
 concat_1_2
 ```
 
-![截屏2021-01-31 下午4.12.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.12.26.png)
+![截屏2021-01-31 下午4.12.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017564.png?token=AWS37JI7XE7UGCITSBYTALDBTJYU6)
 
 ```python
 concat_!_2 = pd.concat([df1,df2],axis = 0)
@@ -84,14 +84,14 @@ concat_!_2 = pd.concat([df1,df2],axis = 0)
 
 
 
-![截屏2021-01-31 下午4.13.05](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.13.05.png)
+![截屏2021-01-31 下午4.13.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017221.png?token=AWS37JNITWQNHDODQCS6243BTJYVE)
 
 ```python
 concat_1_2_3= pd.concat([df1,df2,df3])
 concat_1_2_3
 ```
 
-![截屏2021-01-31 下午4.14.51](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.14.51.png)
+![截屏2021-01-31 下午4.14.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017353.png?token=AWS37JJTXVRV3WKYELB2RGLBTJYVK)
 
 As explained in this example, concatenation glues different DataFrames together without considering the index of any or duplication that might cause. When concatenating, you need to make sure that all DataFrames have the same headers. Otherwise, the values of any column that does not exist in the union of headers of concatenated DataFrame will be replaced with NAN values, as shown when concatenated df3 with df1 and df2.
 
@@ -105,7 +105,7 @@ print(df3)
 print(result)
 ```
 
-![截屏2021-01-31 下午4.16.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.16.00.png)
+![截屏2021-01-31 下午4.16.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017708.png?token=AWS37JIJAZHGPVEU6AGGMWDBTJYWA)
 
 The concatenation is very useful when you have data (with the same attributes) coming from different sources i.e., house prices collected from each suburb. So we glue them together to get a view for house prices all over victoria. We can also add another key column to indicate the source of each chunk of data in a hierarchical way. The example below explains this as follows:
 
@@ -114,7 +114,7 @@ concat_1_2= pd.concat([df1,df2], keys=['source1','source2'])
 print(concat_1_2)
 ```
 
-![截屏2021-01-31 下午4.16.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.16.58.png)
+![截屏2021-01-31 下午4.16.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017085.png?token=AWS37JJHDHZZOJTYEQP7DWTBTJYWE)
 
 An important use case for concatenating is when different perspectives of the same data are collected, so we need to concatenate all the information together to get all the details in one DataFrame. The following example illustrates the concatenation of DataFrame represents landlord profile with another DataFrame for the property details. The concatenation in this case has to be implemented along the horizontal axis (axis=1) rather than the vertical one, while the default concatenation axis is 0 (vertical).
 
@@ -130,7 +130,7 @@ concat_2_4_horizontal= pd.concat([df2,df4],axis=1)
 print(concat_2_4_horizontal)
 ```
 
-![截屏2021-01-31 下午4.19.23](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.19.23.png)
+![截屏2021-01-31 下午4.19.23](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220017436.png?token=AWS37JJNV7EVZZDRFWS22WLBTJYXI)
 
 Concatenating df2 and df4 results in many NAN values because of the non-overlapping in index. Therefore, joining the DataFrames is very useful in this case. Concatenation gives you the three options to handle the other axes too (apart from the one we concatenate on) using outer or inner options or using a specific index. The outer option is the default gets the union of data and grantees zero loss. The previous example shows the outer join of df2 and df4.  On the other hand, inner gets the intersection between the two DataFrames. Last but not least, the “join_axes” argument is used for joining with a specific index. 
 
@@ -139,14 +139,14 @@ joint_result= pd.concat([df2, df4], axis=1, join='inner')
 print(joint_result)
 ```
 
-![截屏2021-01-31 下午4.45.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.45.26.png)
+![截屏2021-01-31 下午4.45.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220018339.png?token=AWS37JLJTQWXPP4V2MCVYXLBTJYXO)
 
 ```python
 merge_2_4 = pd.merge(df1 , df2, how = 'left',left_index = True, right_index = True)
 merge_2_4
 ```
 
-![截屏2021-01-31 下午4.45.41](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.45.41.png)
+![截屏2021-01-31 下午4.45.41](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220018805.png?token=AWS37JKX6JC27QF5WF4ZH6DBTJYXU)
 
 
 
@@ -159,7 +159,7 @@ appended_df= df1.append([df2,df3])
 print(appended_df)
 ```
 
-![截屏2021-01-31 下午4.46.46](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午4.46.46.png)
+![截屏2021-01-31 下午4.46.46](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220018979.png?token=AWS37JJTEODNF26ISXX4ALDBTJYYA)
 
 
 
@@ -189,7 +189,7 @@ print(shopping_history)
 print(merged_df)
 ```
 
-![截屏2021-01-31 下午5.03.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.03.22.png)
+![截屏2021-01-31 下午5.03.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019387.png?token=AWS37JL2MN3C75HRZGPOSFDBTJY4E)
 
 ### Try to change Customer_ID to another name!
 
@@ -198,7 +198,7 @@ merged_df= pd.merge(customers,shopping_history, on="Product_ID")
 print (merged_df)
 ```
 
-![截屏2021-01-31 下午5.05.51](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.05.51.png)
+![截屏2021-01-31 下午5.05.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019551.png?token=AWS37JPAVDW2RLQTBU5KQN3BTJY4I)
 
 ## How to merge:
 
@@ -214,7 +214,7 @@ print (shopping_history)
 print (merged_onkey)
 ```
 
-![截屏2021-01-31 下午5.07.15](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.07.15.png)
+![截屏2021-01-31 下午5.07.15](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019002.png?token=AWS37JIV5G7RDAMZ7RAH5Y3BTJY4O)
 
 ```python
 print (customers)
@@ -227,7 +227,7 @@ merged_right= pd.merge(shopping_history,customers, how='right')
 print (merged_right)
 ```
 
-![截屏2021-01-31 下午5.07.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.07.45.png)
+![截屏2021-01-31 下午5.07.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019519.png?token=AWS37JJSL5CWZT2SGDXHXGLBTJY44)
 
 #### Many-to-many merge:
 
@@ -242,7 +242,7 @@ merge= pd.merge(df1,df2, how='outer',indicator='True')
 print (merge)
 ```
 
-![截屏2021-01-31 下午5.16.53](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.16.53.png)
+![截屏2021-01-31 下午5.16.53](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019847.png?token=AWS37JOZIGJ6MTSUI2N2M4TBTJY5Q)
 
 ```python
 print (df1)
@@ -251,7 +251,7 @@ merge= pd.merge(df1,df2, how='outer',indicator='True', on='d1')
 print (merge)
 ```
 
-![截屏2021-01-31 下午5.18.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.18.35.png)
+![截屏2021-01-31 下午5.18.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019113.png?token=AWS37JIM4L6NNX6H3MTQLW3BTJY5W)
 
 In cases that there is a meaningful index in one of the columns, this index can replace the original DataFrame index. By default, set index returns a new DataFrame, so you will have to specify if you would like the changes to occur in place.
 
@@ -264,7 +264,7 @@ print (customers)
 print (shopping_history)
 ```
 
-![截屏2021-01-31 下午5.19.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.19.59.png)
+![截屏2021-01-31 下午5.19.59](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019469.png?token=AWS37JM74TZ5UATKSURLPN3BTJY6C)
 
 
 
@@ -291,7 +291,7 @@ data= data1.combine_first(data2)
 print (data)
 ```
 
-![截屏2021-01-31 下午5.24.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.24.22.png)
+![截屏2021-01-31 下午5.24.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220019025.png?token=AWS37JJ7UUXTUPSIZVN353TBTJY6Q)
 
 ## Basic data Reshaping:
 
@@ -315,15 +315,15 @@ result=data.stack()
 print (result)
 ```
 
-![截屏2021-01-31 下午5.26.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.26.35.png)
+![截屏2021-01-31 下午5.26.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020610.png?token=AWS37JPN2J6AMUCOI5EQ2OLBTJY7A)
 
-![截屏2021-01-31 下午5.27.10](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.27.10.png)
+![截屏2021-01-31 下午5.27.10](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020968.png?token=AWS37JP3HSB4OGPTW2ULTBTBTJY7E)
 
-![截屏2021-01-31 下午5.27.24](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.27.24.png)
+![截屏2021-01-31 下午5.27.24](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020736.png?token=AWS37JPBNVKUKPOJUTZZ4TDBTJY7O)
 
-![截屏2021-01-31 下午5.28.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.28.02.png)
+![截屏2021-01-31 下午5.28.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020095.png?token=AWS37JK24GZPDRV2XLQESW3BTJY7Q)
 
-![截屏2021-01-31 下午5.28.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.28.26.png)
+![截屏2021-01-31 下午5.28.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020976.png?token=AWS37JNZMQGQTJ6IS3DCFDTBTJY7U)
 
 ```python
 joined= customers.join(shopping_history, how= 'outer')
@@ -332,7 +332,7 @@ print (customers)
 print (joined)
 ```
 
-![截屏2021-01-31 下午5.28.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.28.50.png)
+![截屏2021-01-31 下午5.28.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020817.png?token=AWS37JJM5ZNL5I4NPTDPNUTBTJZAC)
 
 ### Duplication:
 
@@ -346,7 +346,7 @@ cleandata= data.drop_duplicates()
 print (cleandata)
 ```
 
-![截屏2021-01-31 下午5.30.10](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.30.10.png)
+![截屏2021-01-31 下午5.30.10](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020010.png?token=AWS37JLNITIA4UX2CNFHMPDBTJZAQ)
 
 
 
@@ -359,7 +359,7 @@ v2=  data.drop_duplicates(['k2'])
 print (v2)
 ```
 
-![截屏2021-01-31 下午5.31.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.31.09.png)
+![截屏2021-01-31 下午5.31.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020565.png?token=AWS37JLPUPC35GTNNEYN6JDBTJZBU)
 
 ### Renaming axis indexes:
 
@@ -374,4 +374,4 @@ idf.index.map(str.upper)
 idf.rename(index=str.upper, columns=str.upper)
 ```
 
-![截屏2021-01-31 下午5.33.47](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 下午5.33.47.png)
+![截屏2021-01-31 下午5.33.47](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220020226.png?token=AWS37JO3ETR5Y4L2SYK6DBDBTJZCK)

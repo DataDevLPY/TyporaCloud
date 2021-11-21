@@ -2,5 +2,5 @@
 
 
 
-![image-20210708142806359](/Users/peiyang/Library/Application Support/typora-user-images/image-20210708142806359.png)
+![image-20210708142806359](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220043120.png?token=AWS37JOKWTWI5IRM3KYXNQDBTJ3YI)
 

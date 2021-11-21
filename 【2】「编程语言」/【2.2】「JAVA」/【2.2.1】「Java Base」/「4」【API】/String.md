@@ -10,7 +10,7 @@
 
 
 
-  ![截屏2021-06-08 上午10.07.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-08 上午10.07.18.png)
+  ![截屏2021-06-08 上午10.07.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220027743.png?token=AWS37JMPUGK6G42MKN2PZGLBTJZZQ)
 
 
 

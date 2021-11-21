@@ -44,7 +44,7 @@ from pyspark.sql.functions import when, count, isnan, col
 df.select([count(when(isnan(c) | col(c).isNull(), c)).alias(c) for c in df.columns])
 ```
 
-![截屏2021-01-08 下午1.53.13](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-08 下午1.53.13.png)
+![截屏2021-01-08 下午1.53.13](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220107539.png?token=AWS37JMABDQBUS2NCKKXSMDBTJ6P2)
 
 
 
@@ -79,7 +79,7 @@ remover = StopWordsRemover(inputCol = 'raw', outputCol = 'filtered')
 remover.transform(sentenceData).show(truncate = False)
 ```
 
-![截屏2021-01-08 下午2.04.14](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-08 下午2.04.14.png)
+![截屏2021-01-08 下午2.04.14](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220107580.png?token=AWS37JNIHMC6IYHF6F6VCH3BTJ6QE)
 
 
 
@@ -99,7 +99,7 @@ df_indexed = indexer.fit(df).transform(df)
 df_indexed.select([col(x) for x in outputCols]).toPandas().head()
 ```
 
-![截屏2021-01-08 下午8.52.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-08 下午8.52.48.png)
+![截屏2021-01-08 下午8.52.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220107623.png?token=AWS37JO4OUWWKWGEZZ3HEZLBTJ6Q2)
 
 ### One Hot Encoder (OHE) 
 One hot encoding is representation of categorical variables as binary vectors. It works in 2 steps:
@@ -146,7 +146,7 @@ df_final = assembler.transform(df_encoded)
 df_final.select('feature','label').show(5,truncate = False)
 ```
 
-![截屏2021-01-08 下午9.57.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-08 下午9.57.36.png)
+![截屏2021-01-08 下午9.57.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220107932.png?token=AWS37JMM2GR2FHVNE6GWNQDBTJ6RK)
 
 ### ML Algorithm and Prediction 
 
@@ -166,7 +166,7 @@ predicted_data = model.transform(test)
 predicted_data.select('features','label','prediction').filter(predicted_data.label==1).show()
 ```
 
-![截屏2021-01-08 下午10.03.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-08 下午10.03.37.png)
+![截屏2021-01-08 下午10.03.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220107268.png?token=AWS37JKQ4PTLTTZTYURG6U3BTJ6SK)
 
 ```python
 #This gives the accuracy of the model we have built, 
@@ -218,7 +218,7 @@ selected = prediction.select('features','label','probability','prediction')
 selected.show(5, truncate = False)
 ```
 
-![截屏2021-01-08 下午11.10.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-08 下午11.10.03.png)
+![截屏2021-01-08 下午11.10.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220107065.png?token=AWS37JNHFKXEV3YIK22IRDDBTJ6SS)
 
 
 

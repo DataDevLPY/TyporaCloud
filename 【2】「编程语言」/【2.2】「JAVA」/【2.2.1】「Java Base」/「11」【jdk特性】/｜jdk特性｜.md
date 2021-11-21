@@ -2,9 +2,9 @@
 
 
 
-![截屏2021-06-26 下午8.59.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-26 下午8.59.44.png)
+![截屏2021-06-26 下午8.59.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220036218.png?token=AWS37JMEWVCO6IBX5HO5HZTBTJ25C)
 
-![截屏2021-06-26 下午9.00.12](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-26 下午9.00.12.png)
+![截屏2021-06-26 下午9.00.12](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220036985.png?token=AWS37JO6IGIKLV2K2EOGVMTBTJ25G)
 
 
 

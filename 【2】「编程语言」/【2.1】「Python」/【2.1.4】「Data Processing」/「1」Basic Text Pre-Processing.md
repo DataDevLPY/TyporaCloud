@@ -23,7 +23,7 @@ unigram_tokens = tokenizer.tokenize(raw_text)
 print(unigram_tokens)
 ```
 
-![截屏2021-01-28 上午11.26.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午11.26.26.png)
+![截屏2021-01-28 上午11.26.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220021870.png?token=AWS37JJBVBNXHMRF5X66DKLBTJZDO)
 
 ```python
 uni_voc = list(set(unigram_tokens))
@@ -45,7 +45,7 @@ mwe_tokens = mwe_tokenizer.tokenize(unigram_tokens)
 print(mwe_tokens)
 ```
 
-![截屏2021-01-28 上午11.32.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午11.32.42.png)
+![截屏2021-01-28 上午11.32.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220021102.png?token=AWS37JNJGFRIWDJ42HPQ53LBTJZDW)
 
 ## 2. Stop Words Removal
 
@@ -74,7 +74,7 @@ for sent in sentences:
     print (sent)
 ```
 
-![截屏2021-01-28 上午11.57.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午11.57.48.png)
+![截屏2021-01-28 上午11.57.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220021511.png?token=AWS37JLKVXKUAARYSNMNAYLBTJZEC)
 
 ```python
 tagged_sents = []
@@ -88,7 +88,7 @@ for sent in sentences:
 print(tagged_sents)
 ```
 
-![截屏2021-01-28 下午12.22.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 下午12.22.42.png)
+![截屏2021-01-28 下午12.22.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220021503.png?token=AWS37JMHB3TGIXRRK5KG2WLBTJZEO)
 
 
 

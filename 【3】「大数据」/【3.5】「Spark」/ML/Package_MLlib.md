@@ -10,11 +10,11 @@ MLlib是Spark中实现机器学习功能的模块，其主要针对RDD对象与D
 
 首先读入数据，因为我们的数据以csv的形式保存，因此先以DataFrame的形式读入内存。			
 
-![截屏2021-01-19 下午12.24.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.24.43.png)
+![截屏2021-01-19 下午12.24.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108946.png?token=AWS37JMVBBKQLCLJJTC366DBTJ6T2)
 
 从数据中选取一个检测点作为我们要使用的点,可以看到该点共有2969条数据。数据读入时已经按照时间排序完成了，因此数据本身是保证了时序顺序的。
 
-​			![截屏2021-01-19 下午12.25.34](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.25.34.png)
+​			![截屏2021-01-19 下午12.25.34](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108188.png?token=AWS37JIU3DJN7LWMOHQJYMTBTJ6T6)
 
 
 
@@ -22,17 +22,17 @@ MLlib是Spark中实现机器学习功能的模块，其主要针对RDD对象与D
 
 首先选择出要使用的属性并将其转换为RDD。转换为RDD后，每个RDD保存原DataFrame每一行的数据。
 
-![截屏2021-01-19 下午12.27.47](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.27.47.png)
+![截屏2021-01-19 下午12.27.47](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108147.png?token=AWS37JPK2VUVBKM66WJB3DDBTJ6US)
 
 为筛选的列使用mlib的统计函数进行统计。(读入的时候需要对na值进行填充，否则包含na的列其统计信息也为na）
 
-![截屏2021-01-19 下午12.28.41](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.28.41.png)
+![截屏2021-01-19 下午12.28.41](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108690.png?token=AWS37JPNXGC4BQF3SCVJBMTBTJ6VA)
 
 ## 相关性
 
 交通流数据之间具有较强的相关性，流量、速度、占有率之间可以按照特定的函数进行转化，我们使用mllib的相关性函数来查看三种属性之间的相关性。可以看出流量与占有率是正相关的，与速度是负相关的。
 
-![截屏2021-01-19 下午12.30.11](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.30.11.png)
+![截屏2021-01-19 下午12.30.11](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108087.png?token=AWS37JNWYWOSCVTYK5VNXALBTJ6VK)
 
 
 
@@ -42,17 +42,17 @@ MLlib是Spark中实现机器学习功能的模块，其主要针对RDD对象与D
 
 首先我们读入数据，提取指定点的流量数据。
 
-![截屏2021-01-19 下午12.30.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.30.35.png)
+![截屏2021-01-19 下午12.30.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108043.png?token=AWS37JKRCYAOH5ANLP7RMSTBTJ6VW)
 
 
 
 然后我们根据时滞lag=4来构建二维的数据集合，即用过去四个点预测未来一个点。通过**slide()**函数我们可以获得一个大小为(n, 5)的矩阵。
 
-![截屏2021-01-19 下午12.31.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.31.02.png)
+![截屏2021-01-19 下午12.31.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108250.png?token=AWS37JPROOLHNCMM5TCE4YDBTJ6V2)
 
 然后我们将创建好的数据转化为RDD类型。
 
-![截屏2021-01-19 下午12.31.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.31.50.png)
+![截屏2021-01-19 下午12.31.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108169.png?token=AWS37JKYTYIWEREO63F3FSLBTJ6WC)
 
 有了RDD类型之后，我们将其构建为Mllib中的模型能够使用的数据格式**LabeledPoint**。其参数如下，第一个值为预测值或者标签，后面的值为特征集合。
 
@@ -110,7 +110,7 @@ def eva(res):
 
 将写好的文件提交到spark，运行结果如下：
 
-![截屏2021-01-19 下午12.36.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-19 下午12.36.43.png)
+![截屏2021-01-19 下午12.36.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108728.png?token=AWS37JLLCSAPYHBLFFGOWOTBTJ6WS)
 
 
 

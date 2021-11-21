@@ -3,7 +3,7 @@
 ### Decision Tree
 Decision tree algorithms are said to be widely used because they process categorical data and are readily available in classification tasks by multiple classes. The goal of using a Decision Tree is to create a training model that can use to predict the class or value of the target variable by learning simple decision rules inferred from prior data(training data). The picture below shows some components in a decistion tree.
 
-![截屏2021-01-10 上午11.53.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-10 上午11.53.03.png)
+![截屏2021-01-10 上午11.53.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220106662.png?token=AWS37JMOBJQLS63IRVPXDALBTJ6OU)
 
 Decision trees use multiple algorithms to decide to split a node into two or more sub-nodes. The creation of sub-nodes increases the homogeneity of resultant sub-nodes. In other words, we can say that the purity of the node increases with respect to the target variable. The decision tree splits the nodes on all available variables and then selects the split which results in most homogeneous sub-nodes.
 
@@ -144,13 +144,13 @@ y = ('accuracy','precision','recall','f1-scores')
 plot_metrics(y,x)
 ```
 
-![截屏2021-01-10 下午4.35.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-10 下午4.35.35.png)
+![截屏2021-01-10 下午4.35.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220106320.png?token=AWS37JJ6R4U4OESOTKM64HDBTJ6PC)
 
 
 
 #### Area Under the Curve (AUC-ROC) 
 
-![截屏2021-01-10 下午4.36.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-10 下午4.36.26.png)
+![截屏2021-01-10 下午4.36.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220106709.png?token=AWS37JLLWR3FPU2TJHPCBKTBTJ6PA)
 
 ##### Binary Classification Metrics 
 

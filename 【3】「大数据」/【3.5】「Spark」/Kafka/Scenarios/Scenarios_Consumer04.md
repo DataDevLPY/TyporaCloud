@@ -107,5 +107,5 @@ if __name__ == '__main__':
     
 ```
 
-![截屏2021-01-22 下午9.17.47](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午9.17.47.png)
+![截屏2021-01-22 下午9.17.47](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220104980.png?token=AWS37JJJKN3MRBQPZ22RNC3BTJ6HQ)
 

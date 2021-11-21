@@ -42,14 +42,14 @@ df_user_artist = df_user_artist.drop('value')
 df_user_artist.toPandas().head()
 ```
 
-![截屏2021-01-20 上午8.12.32](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-20 上午8.12.32.png)
+![截屏2021-01-20 上午8.12.32](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114756.png?token=AWS37JN36EKMX3E62O2ZD7TBTJ7LK)
 
 ```python
 from pyspark.sql.functions import when, col, isnan, count
 df_user_artist.select([count(when(isnan(x) | col(x).isNull(), x)).alias(x) for x in df_user_artist.columns]).toPandas()
 ```
 
-![截屏2021-01-21 下午7.48.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-21 下午7.48.19.png)
+![截屏2021-01-21 下午7.48.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114963.png?token=AWS37JM72MC5OZMPXJNMKYTBTJ7LM)
 
 ```python
 df_artist_data = spark.read.format('text')\
@@ -64,13 +64,13 @@ df_artist_data = df_artist_data.drop('value')
 df_artist_data.toPandas().head()
 ```
 
-![截屏2021-01-21 下午7.53.27](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-21 下午7.53.27.png)
+![截屏2021-01-21 下午7.53.27](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114623.png?token=AWS37JPAOYUHZ3NUDNOIISTBTJ7LS)
 
 ```python
 df_artist_data.select([count(when(isnan(x) | col(x).isNull(), x)).alias(x) for x in df_artist_data.columns]).toPandas()
 ```
 
-![截屏2021-01-21 下午8.22.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-21 下午8.22.03.png)
+![截屏2021-01-21 下午8.22.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114163.png?token=AWS37JPVSK7G76GPLCUZVDLBTJ7LY)
 
 ```python
 df_artist_alias = spark.read.format('text')\
@@ -85,13 +85,13 @@ df_artist_alias = df_artist_alias.drop('value')
 df_artist_alias.toPandas().head()
 ```
 
-![截屏2021-01-21 下午8.22.28](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-21 下午8.22.28.png)
+![截屏2021-01-21 下午8.22.28](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114272.png?token=AWS37JJSFMJYA6BTNWQRSHLBTJ7L6)
 
 ```python
 df_artist_alias.select([count(when(isnan(x) | col(x).isNull(), x)).alias(x) for x in df_artist_alias.columns]).toPandas()
 ```
 
-![截屏2021-01-21 下午8.22.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-21 下午8.22.48.png)
+![截屏2021-01-21 下午8.22.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114505.png?token=AWS37JKPUYXB6S3XHEM47CTBTJ7MG)
 
 
 
@@ -150,7 +150,7 @@ def top_n_artists(artist, user_artist, user_id, limit):
 top_n_artists(df_artist_data,df_user_artist,2062243,5).toPandas()
 ```
 
-![截屏2021-01-22 上午11.33.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 上午11.33.45.png)
+![截屏2021-01-22 上午11.33.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114928.png?token=AWS37JIM2CWTYBI3OQT2PZDBTJ7MU)
 
 ```python
 #Cast the data column into integer types
@@ -227,7 +227,7 @@ prediction = model.transform(test)
 prediction.show(20, truncate = False)
 ```
 
-![截屏2021-01-22 下午2.45.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午2.45.31.png)
+![截屏2021-01-22 下午2.45.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220114005.png?token=AWS37JKVJ2LGYVBLNARWOE3BTJ7M6)
 
 ## Evalutation of ALS 
 
@@ -244,7 +244,7 @@ rmse = evaluator.evaluate(prediction)
 print("Root-mean-square error = " + str(rmse))
 ```
 
-![截屏2021-01-22 下午2.54.25](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午2.54.25.png)
+![截屏2021-01-22 下午2.54.25](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220115204.png?token=AWS37JKKN5OVSU3VOV4SBH3BTJ7NI)
 
 **NOTE:** If you run the above code, the RMSE you will observe is very high.
 
@@ -273,7 +273,7 @@ def ROEM(predictions, userCol = "userId", itemCol = "songId", ratingCol = "num_p
 ROEM(predictions,'user_id','artist_id','playcount')
 ```
 
-![截屏2021-01-22 下午3.01.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午3.01.00.png)
+![截屏2021-01-22 下午3.01.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220115986.png?token=AWS37JK5GEYQGHBE5BABFWDBTJ7NQ)
 
 ## Hyperparameter tuning and cross validation 
 

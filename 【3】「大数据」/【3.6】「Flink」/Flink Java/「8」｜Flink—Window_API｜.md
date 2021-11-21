@@ -2,17 +2,17 @@
 
 ## Window API
 
-![截屏2021-08-28 下午9.30.44](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-08-28 下午9.30.44.png)
+![截屏2021-08-28 下午9.30.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220126271.png?token=AWS37JOX2NM5GAP7L2TYPGDBTKAXI)
 
-![截屏2021-08-28 下午9.31.30](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-08-28 下午9.31.30.png)
+ ![截屏2021-08-28 下午9.31.30](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220126090.png?token=AWS37JJV5N2JS5YRLJYJTWDBTKAYA)
 
-![截屏2021-08-28 下午9.31.54](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-08-28 下午9.31.54.png)
+![截屏2021-08-28 下午9.31.54](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220127025.png?token=AWS37JL2TEGPIALRZO4EMQDBTKA5O)
 
- 
+
 
  ## Window Function
 
-![截屏2021-08-28 下午9.44.47](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-08-28 下午9.44.47.png)
+![截屏2021-08-28 下午9.44.47](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220127445.png?token=AWS37JMCM64XMRA6KAZY3JTBTKA5K)
 
 ### 增量窗口
 
@@ -264,9 +264,9 @@ public class WindowTest2 {
 
 ## 其他可选API
 
-![截屏2021-08-31 下午4.19.33](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-08-31 下午4.19.33.png)
 
 
+![截屏2021-08-31 下午4.19.33](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220128094.png?token=AWS37JPA43JZ54XFUJ6PT6DBTKBA6)
 
 ```java
 package com.peiyang.apitest.window;
@@ -319,7 +319,7 @@ public class WindowTest3 {
 
 
 
-![截屏2021-08-31 下午7.04.15](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-08-31 下午7.04.15.png)
+![截屏2021-08-31 下午7.04.15](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220128853.png?token=AWS37JKQE3PLGWT2Q6RHRULBTKA62)
 
 
 

@@ -56,7 +56,7 @@ for link in bsobj.find("div", {"id": "bodyContent"}).findAll("a", href=re.compil
         print(link.attrs['href'])
 ```
 
-![截屏2021-01-31 上午10.20.12](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.20.12.png)
+![截屏2021-01-31 上午10.20.12](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220015689.png?token=AWS37JK4HJ4WZUUM4BMS3CTBTJYPO)
 
 ## Task 2 Perform a random walk through a given webpate.
 
@@ -90,19 +90,19 @@ while len(links) > 0 and count < 5:
     count = count + 1
 ```
 
-![截屏2021-01-31 上午10.35.39](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.35.39.png)
+![截屏2021-01-31 上午10.35.39](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016750.png?token=AWS37JO4Y6KYMBSTQXY2XXTBTJYP4)
 
 ```python
 links[random.randint(0, len(links)-1)].attrs["href"]
 ```
 
-![截屏2021-01-31 上午10.36.16](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.36.16.png)
+![截屏2021-01-31 上午10.36.16](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016296.png?token=AWS37JIESPZI4YGRUFUCPODBTJYQI)
 
 ```python
 random.randint(0, len(links)-1)
 ```
 
-![截屏2021-01-31 上午10.37.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.37.02.png)
+![截屏2021-01-31 上午10.37.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016317.png?token=AWS37JOUA6X64B5OLTA5WWLBTJYQS)
 
 ## Task 3 Crawl the Entire Wikipedia website
 
@@ -147,7 +147,7 @@ def getLinks(pageUrl):
 getLinks("")
 ```
 
-![截屏2021-01-31 上午10.40.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.40.48.png)
+![截屏2021-01-31 上午10.40.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016761.png?token=AWS37JJWUZ2F6ZURTGKS7OTBTJYQ4)
 
 
 
@@ -186,7 +186,7 @@ bsObj = BeautifulSoup(html, "html.parser")
 bsObj
 ```
 
-![截屏2021-01-31 上午10.43.20](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.43.20.png)
+![截屏2021-01-31 上午10.43.20](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016682.png?token=AWS37JL2BKXLEDFJQW5RAMTBTJYRK)
 
 ```python
 def getLinks(pageUrl):
@@ -227,7 +227,7 @@ response= requests.get(url)
 response
 ```
 
-![截屏2021-01-31 上午10.45.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.45.58.png)
+![截屏2021-01-31 上午10.45.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016118.png?token=AWS37JOXZUR3BNO3SZ2GXSDBTJYRQ)
 
 The response object contains GET query response. A successfull one has a value of 200. we need to parse the response with json to extract the information.
 
@@ -236,14 +236,14 @@ The response object contains GET query response. A successfull one has a value o
 print (response.status_code)
 ```
 
-![截屏2021-01-31 上午10.46.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.46.44.png)
+![截屏2021-01-31 上午10.46.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016619.png?token=AWS37JJGDIADWYPQRJNETMTBTJYR4)
 
 ```python
 # response.content is text
 print (type(response.content))
 ```
 
-![截屏2021-01-31 上午10.46.56](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.46.56.png)
+![截屏2021-01-31 上午10.46.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016567.png?token=AWS37JNZ7UFIN6OQ3JHSAA3BTJYSA)
 
 ```python
 #response.json() converts the content to json 
@@ -251,13 +251,13 @@ data = response.json()
 print (type(data))
 ```
 
-![截屏2021-01-31 上午10.47.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.47.18.png)
+![截屏2021-01-31 上午10.47.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016001.png?token=AWS37JPMQFUIYL3PJ34E3Q3BTJYSM)
 
 ```python
 data.keys()
 ```
 
-![截屏2021-01-31 上午10.47.54](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.47.54.png)
+![截屏2021-01-31 上午10.47.54](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220016280.png?token=AWS37JIE3JEJRTLIEQ4URULBTJYSY)
 
 ```python
 data

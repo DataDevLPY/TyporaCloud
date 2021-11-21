@@ -59,7 +59,7 @@ print(f'The count of crashes: {rdd_crash_list_rm_header.count()}')
 #rdd_crash_list_rm_header.take(10)
 ```
 
-![截屏2020-12-24 下午5.34.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-24 下午5.34.45.png)
+![截屏2020-12-24 下午5.34.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101336.png?token=AWS37JMC6OK2TEIZRJJEPZDBTJ53I)
 
 ### 1.2 Data Partitioning in RDD
 * 1). How many partitions do the above RDDs have? How is the data in these RDDs
@@ -96,7 +96,7 @@ unit_key_value_pair_list = rdd_units_list_re_header.map(Lic_key_value)
 unit_key_value_pair_list.take(1)
 ```
 
-![截屏2020-12-25 上午1.05.25](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-25 上午1.05.25.png)
+![截屏2020-12-25 上午1.05.25](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101898.png?token=AWS37JNUYAWOA4XZKA5CZX3BTJ53O)
 
 ```python
 from pyspark.rdd import RDD
@@ -129,7 +129,7 @@ units_partition = unit_key_value_pair_list.partitionBy(2,if_Lic_is_SA)
 print_partitions(units_partition)
 ```
 
-![截屏2020-12-25 上午1.08.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-25 上午1.08.31.png)
+![截屏2020-12-25 上午1.08.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101034.png?token=AWS37JOJGZD2EIHPVFAEII3BTJ53Y)
 
 
 
@@ -187,7 +187,7 @@ print('The average age of male is: ', average_male_age)
 print('The average age of female is: ', average_female_age)
 ```
 
-![截屏2020-12-25 下午5.36.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-25 下午5.36.31.png)
+![截屏2020-12-25 下午5.36.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101049.png?token=AWS37JKZSKURPVLSLQ736BLBTJ54E)
 
 ```python
 # What is the oldest and the newest vehicle year involved in the accident? 
@@ -224,7 +224,7 @@ print(f'The newest vehicle year involved in the accident: {max_year}')
 print(f'The oldest vehicle year involved in the accident: {min_year}')
 ```
 
-![截屏2020-12-25 下午6.33.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-25 下午6.33.45.png)
+![截屏2020-12-25 下午6.33.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102430.png?token=AWS37JNUXH5YTMMUD3ILZ5DBTJ54O)
 
 
 
@@ -248,7 +248,7 @@ df_units.printSchema()
 df_crash.printSchema()
 ```
 
-![截屏2020-12-27 上午12.12.10](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-27 上午12.12.10.png)
+![截屏2020-12-27 上午12.12.10](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102459.png?token=AWS37JMXTVDJJCUIJKFHSWTBTJ544)
 
 
 
@@ -281,7 +281,7 @@ Top_ten_crash = df_crash.sort('Total Cas', ascending = False)
 Top_ten_crash.select('Total Cas').take(10)
 ```
 
-![截屏2020-12-27 下午3.12.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-27 下午3.12.36.png)
+![截屏2020-12-27 下午3.12.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102065.png?token=AWS37JJWCIFOHB64UK3REN3BTJ55G)
 
 ```python
 # Find the total number of fatalities for each crash type.
@@ -292,7 +292,7 @@ fats_for_type_num = df_crash.groupby('Crash Type').agg(sum('Total Fats'))
 fats_for_type_num.show()
 ```
 
-![截屏2020-12-27 下午3.53.32](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-27 下午3.53.32.png)
+![截屏2020-12-27 下午3.53.32](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102337.png?token=AWS37JONWCN3ELFYQXOXQQTBTJ55Q)
 
 ```python
 # Find the total number of casualties for each suburb 
@@ -305,7 +305,7 @@ cas_for_suburb = unlicense_event.groupby('Suburb').agg(sum('Total Cas'))
 cas_for_suburb.show()
 ```
 
-![截屏2020-12-27 下午6.44.54](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-27 下午6.44.54.png)
+![截屏2020-12-27 下午6.44.54](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102032.png?token=AWS37JJBNGYUYQGL6VEIZA3BTJ552)
 
 ### 2.3 Severity Analysis
 In this section, we want to analyze whether severity of accidents is higher when the driver is on drugs or alcohol compared to when the driver is normal. The severity of the crash is given by the column “CSEF Severity”, the three levels of severity is given below (also included in the Metadata file). Similarly the columns “DUI Involved” and “Drugs Involved” tell whether the driver has been detected with blood alcohol and drugs respectively.
@@ -330,7 +330,7 @@ severity_count = df_crash.groupby('CSEF Severity').count()\
 severity_count.show()
 ```
 
-![截屏2020-12-27 下午7.27.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-27 下午7.27.17.png)
+![截屏2020-12-27 下午7.27.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102389.png?token=AWS37JL2BYEGDEEUGRH4AO3BTJ56C)
 
 ```python
 # Compute the total number of crash events for each severity level 
@@ -366,7 +366,7 @@ final_percent_a.select('CSEF Severity','count','Percentage').show()
 
 ```
 
-![截屏2020-12-27 下午8.22.56](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-27 下午8.22.56.png)
+![截屏2020-12-27 下午8.22.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102612.png?token=AWS37JI57AHPIKWYNTBNM3TBTJ57G)
 
 ```python
 # Compute the total number of crash events for each severity level 
@@ -388,7 +388,7 @@ final_percent_a = final_percent_a.withColumnRenamed('dui_count', 'Percentage')
 final_percent_a.select('CSEF Severity','count','Percentage').show()
 ```
 
-![截屏2020-12-27 下午11.09.05](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-27 下午11.09.05.png)
+![截屏2020-12-27 下午11.09.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220102199.png?token=AWS37JO4CTV7VUD57UXVMF3BTJ57K)
 
 
 

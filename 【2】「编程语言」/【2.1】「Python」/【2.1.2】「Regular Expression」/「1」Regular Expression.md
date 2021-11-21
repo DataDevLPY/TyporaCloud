@@ -43,14 +43,14 @@ print('\tTab')
 print(r'\tTab')
 ```
 
-![截屏2021-01-25 下午9.02.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.02.17.png)
+![截屏2021-01-25 下午9.02.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013375.png?token=AWS37JK4GA63TWU6QW53CI3BTJYFU)
 
 ```python
 print('This is a \nnew line')
 print(r'This is a \nnew line')
 ```
 
-![截屏2021-01-25 下午9.03.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.03.03.png)
+![截屏2021-01-25 下午9.03.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013597.png?token=AWS37JNKUGWLWVTUSXRGQFDBTJYF2)
 
 ```python
 str1 = re.findall('\\t','Please find \t')
@@ -60,7 +60,7 @@ str2 = re.findall('\t','Please find \t')
 print(str2)
 ```
 
-![截屏2021-01-25 下午9.04.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.04.42.png)
+![截屏2021-01-25 下午9.04.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013533.png?token=AWS37JKGNZ5GMPYCPK6SWALBTJYGG)
 
 ```python
 urls = '''
@@ -78,7 +78,7 @@ for match in matches:
     # match.group(1)
 ```
 
-![截屏2021-01-25 下午9.53.23](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午9.53.23.png)
+![截屏2021-01-25 下午9.53.23](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013673.png?token=AWS37JK5Q3H6IV5Q5G54XC3BTJYGY)
 
 ```python
 def date(pattern, m):
@@ -111,7 +111,7 @@ date(regex, "29/05/2019")
 date(regex, "31/06/2019")
 ```
 
-![截屏2021-01-25 下午10.06.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午10.06.02.png)
+![截屏2021-01-25 下午10.06.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013032.png?token=AWS37JPRRRSRKWKAQPA2RCLBTJYHG)
 
 ## 3. Extract IPs, dates, and email address with regular expressions
 

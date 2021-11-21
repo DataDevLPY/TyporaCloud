@@ -23,7 +23,7 @@ df = spark.read.csv("SMSSpamCollection", sep = "\t", inferSchema = True, header 
 df.show(5, truncate = False)
 ```
 
-![截屏2021-01-07 下午10.35.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-07 下午10.35.58.png)
+![截屏2021-01-07 下午10.35.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220109120.png?token=AWS37JK4BSWSOWVOASP5CGTBTJ6XC)
 
 ```python
 # Rename columns
@@ -31,7 +31,7 @@ df = df.withColumnRenamed('_c0', 'label').withColumnRenamed('_c1', 'message')
 df.show(5, truncate = False)
 ```
 
-![截屏2021-01-07 下午10.36.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-07 下午10.36.36.png)
+![截屏2021-01-07 下午10.36.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220109820.png?token=AWS37JNNXELWQWXMOHY5DL3BTJ6XG)
 
 ```python
 # Change the status column to numeric: ham to 1.0 and spam to 0. 
@@ -41,7 +41,7 @@ df = df.withColumn('label', when(df['label'] == 'ham', 1.0).otherwise(0.0))
 df.show(5, truncate = False)
 ```
 
-![截屏2021-01-07 下午10.39.32](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-07 下午10.39.32.png)
+![截屏2021-01-07 下午10.39.32](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220109526.png?token=AWS37JKLET57TXWN6UWKSQLBTJ6XQ)
 
 
 
@@ -56,7 +56,7 @@ wordsData = tokenizer.transform(df)
 wordsData.show(5, truncate = False)
 ```
 
-![截屏2021-01-07 下午10.43.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-07 下午10.43.52.png)
+![截屏2021-01-07 下午10.43.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220109315.png?token=AWS37JIX3D2X5WSB7A5SQODBTJ6X2)
 
 ### Feature Extraction: CountVectorizer
 
@@ -70,7 +70,7 @@ featurizedData = model.transfrom(wordsData)
 featurizedData.toPandas()
 ```
 
-![截屏2021-01-07 下午10.50.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-07 下午10.50.43.png)
+![截屏2021-01-07 下午10.50.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220109818.png?token=AWS37JLGMI2NOLJKUJ4BAITBTJ6YS)
 
 ```python
 from pyspark.ml.feature import IDF
@@ -85,7 +85,7 @@ rescaledData.select('label','features').show(5, truncate = False)
 # We want only the label and features columns for our machine learning models
 ```
 
-![截屏2021-01-07 下午11.02.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-07 下午11.02.43.png)
+![截屏2021-01-07 下午11.02.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220109368.png?token=AWS37JPO7EB6KPAC6R5JLDDBTJ6ZC)
 
 ### ML Pipeline
 
@@ -99,7 +99,7 @@ print("Number of training data: ", trainDF.count())
 print("Number of test data: ", testDF.count())
 ```
 
-![截屏2021-01-07 下午11.10.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-07 下午11.10.36.png)
+![截屏2021-01-07 下午11.10.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220109069.png?token=AWS37JOBY2QF537XPIFUNI3BTJ62G)
 
 ## Model: Logistic Regression Classifier
 

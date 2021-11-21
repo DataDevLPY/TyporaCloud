@@ -100,7 +100,7 @@ houses_sub %>%
   ggpairs()
 ```
 
-![截屏2021-02-05 下午7.52.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午7.52.59.png)
+![截屏2021-02-05 下午7.52.59](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220052941.png?token=AWS37JNPOTV2DITQFKOCTQLBTJ4ZK)
 
 
 
@@ -138,11 +138,11 @@ houses_sub %>%
 
 
 
-![截屏2021-02-05 下午7.55.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午7.55.44.png)
+![截屏2021-02-05 下午7.55.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220052092.png?token=AWS37JNJ25QJJEVETJU5ILLBTJ4ZY)
 
 
 
-![截屏2021-02-05 下午7.55.56](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午7.55.56.png)
+![截屏2021-02-05 下午7.55.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220052356.png?token=AWS37JIFFBGPXXLQTB2ILRTBTJ4Z4)
 
 
 
@@ -229,15 +229,15 @@ houses_sub_shadow %>%
 
 
 
-![截屏2021-02-05 下午8.02.15](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.02.15.png)
+![截屏2021-02-05 下午8.02.15](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220052149.png?token=AWS37JOWZWESHHMMTWHN3N3BTJ42C)
 
 
 
-![截屏2021-02-05 下午8.02.34](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.02.34.png)
+![截屏2021-02-05 下午8.02.34](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220052048.png?token=AWS37JJPMT4CFIASVBQTXQDBTJ42G)
 
 
 
-![截屏2021-02-05 下午8.02.49](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.02.49.png)
+![截屏2021-02-05 下午8.02.49](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220053616.png?token=AWS37JNGFOWGYLDJJPSXG5DBTJ42Y)
 
 
 
@@ -257,7 +257,7 @@ houses_sub_shadow %>%
             mean_bath = mean(Bathroom, na.rm=TRUE))
 ```
 
-![截屏2021-02-05 下午8.05.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.05.19.png)
+![截屏2021-02-05 下午8.05.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220053730.png?token=AWS37JJR77OQWWDH27MK7HTBTJ43E)
 
 
 
@@ -279,7 +279,7 @@ houses_sub_shadow_mean %>%
   scale_color_brewer("Missingness",palette = "Dark2")
 ```
 
-![截屏2021-02-05 下午8.07.57](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.07.57.png)
+![截屏2021-02-05 下午8.07.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220053057.png?token=AWS37JLRK47RMCSCXKXXPV3BTJ43M)
 
   * Based on the scatter plot, describe whether each statement is true:
     * The number of bedrooms and bathrooms in a house are positively
@@ -326,7 +326,7 @@ houses_sub_shadow_mean %>%
 
 ```
 
-![截屏2021-02-05 下午8.10.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.10.02.png)
+![截屏2021-02-05 下午8.10.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220053428.png?token=AWS37JL2RC7AW3A5JSQXZCDBTJ43W)
 
 4. Impute the missing values for Bedroom2 and Bathroom using a linear regression
     model on the variable Rooms
@@ -379,7 +379,7 @@ houses_sub_shadow_linreg %>%
   scale_colour_brewer("Miss bathroom", palette = "Dark2")
 ```
 
-![截屏2021-02-05 下午8.13.05](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.13.05.png)
+![截屏2021-02-05 下午8.13.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220053914.png?token=AWS37JI4QULRDW675QK7HMLBTJ44E)
 
 
 
@@ -394,4 +394,4 @@ houses_sub_shadow_linreg %>%
   theme_bw()
 ```
 
-![截屏2021-02-05 下午8.12.49](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午8.12.49.png)
+![截屏2021-02-05 下午8.12.49](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220053747.png?token=AWS37JLKP4LH3NLH2HL6EDDBTJ44K)

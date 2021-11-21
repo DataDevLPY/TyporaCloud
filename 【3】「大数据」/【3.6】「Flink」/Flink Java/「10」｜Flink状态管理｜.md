@@ -1,22 +1,18 @@
 
 
-![截屏2021-09-02 下午10.01.29](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-02%20%E4%B8%8B%E5%8D%8810.01.29.png?token=AWS37JLTYXDWVOGCFCBNK3TBTIOWW)
+![截屏2021-09-02 下午10.01.29](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220129183.png?token=AWS37JOVL565VMVZMXNJD73BTKBDQ)
 
 
 
 
 
-![截屏2021-09-02 下午10.02.36](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-09-02 下午10.02.36.png)
+![截屏2021-09-02 下午10.02.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220130427.png?token=AWS37JPU56SP7WTNKO3IHRDBTKBHE)
 
 
 
+![截屏2021-09-02 下午10.11.27](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220130563.png?token=AWS37JJ635SNTMQXH7SYR2TBTKBHK)
 
-
-![截屏2021-09-02 下午10.11.27](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-09-02 下午10.11.27.png)
-
-
-
-![截屏2021-09-02 下午10.15.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-02%20%E4%B8%8B%E5%8D%8810.15.05.png?token=AWS37JPIMDCVGZOHNTJLSRTBTIOWY)
+![截屏2021-09-02 下午10.15.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220130949.png?token=AWS37JMQFRIJDENM2Z7HBRDBTKBHO)
 
 
 
@@ -89,7 +85,7 @@ public class stateTest1_operatorState {
 
 
 
-![截屏2021-09-04 上午2.01.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-04%20%E4%B8%8A%E5%8D%882.01.38.png?token=AWS37JPBT6M45BLPCQRCYL3BTIOXC)
+![截屏2021-09-04 上午2.01.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220130383.png?token=AWS37JOZMZ3PN73ZMK2ZNPLBTKBHY)
 
 ```java
 package com.peiyang.apitest.state;
@@ -220,9 +216,9 @@ public class WindowTest3 {
 
 
 
-![截屏2021-09-07 下午8.17.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-07%20%E4%B8%8B%E5%8D%888.17.31.png?token=AWS37JNI56ABFTFSSKY2R4DBTIOXW)
+![截屏2021-09-07 下午8.17.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220130640.png?token=AWS37JOVV3HWW2RTULWWNP3BTKBIE)
 
-![截屏2021-09-07 下午8.18.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-09-07%20%E4%B8%8B%E5%8D%888.18.00.png?token=AWS37JOKH567AJ6J6MAEQV3BTIOXM)
+![截屏2021-09-07 下午8.18.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220130726.png?token=AWS37JJKS5K7ZJPLDGNFUALBTKBIG)
 
  
 

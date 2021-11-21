@@ -17,7 +17,7 @@ df['split'].str.extract("Incident(.*)involving")
 # use the extract method on the str
 ```
 
-![截屏2021-01-25 下午4.41.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.41.52.png)
+![截屏2021-01-25 下午4.41.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220011106.png?token=AWS37JOZLZHZFIGSVBKTQ4LBTJYAO)
 
 ### But we want planes in a new column, we can create one called 'extract' like this:
 
@@ -25,7 +25,7 @@ df['split'].str.extract("Incident(.*)involving")
 df.insert(1, 'extract', df['split'].str.extract("Incident (.*) involving"), expand=True)
 ```
 
-![截屏2021-01-25 下午4.47.51](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.47.51.png)
+![截屏2021-01-25 下午4.47.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220011604.png?token=AWS37JNXEQZCGLQJO3S2NQTBTJYAS)
 
 ```python
 # and repeat to get the aircraft type 
@@ -34,7 +34,7 @@ df.insert(1, 'extract1', df['split'].str.extract(" a (.*) in ",expand= True))
 df.head(5)
 ```
 
-![截屏2021-01-25 下午4.51.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.51.58.png)
+![截屏2021-01-25 下午4.51.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013045.png?token=AWS37JNC2V2ZXDTN27HWDWDBTJYFC)
 
 ## Step 3 'Fill down'
 
@@ -56,7 +56,7 @@ We need to delete all the 'incident' rows, they have served their purpose and ar
 df = df[df['split'].str.contains("Incident") == False]
 ```
 
-![截屏2021-01-25 下午4.58.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午4.58.00.png)
+![截屏2021-01-25 下午4.58.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220012027.png?token=AWS37JMCQIWCEGY3M5L7R7DBTJYBM)
 
 ## Now to 'unfold', there are several options
 
@@ -69,7 +69,7 @@ data.head() # 58 records, good, but lost plane type, bad
 # where's 'extract1' - can we have multiple indexes or have to put that data back in?
 ```
 
-![截屏2021-01-25 下午5.07.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.07.03.png)
+![截屏2021-01-25 下午5.07.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220012041.png?token=AWS37JKU2FRFDXDYGFCTAATBTJYBS)
 
 ```python
 # solution: make the function a copy, x = x
@@ -86,7 +86,7 @@ data = pd.pivot_table(df, index=["extract","extract1"], columns = 'split', value
 data.reset_index()
 ```
 
-![截屏2021-01-25 下午5.11.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.11.19.png)
+![截屏2021-01-25 下午5.11.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220012955.png?token=AWS37JPP6CTJQ655TTE4JADBTJYCQ)
 
 
 
@@ -101,7 +101,7 @@ data.reset_index()
 data[['Crew','Passengers']].plot(x='Crew', y='Passengers', kind='scatter')
 ```
 
-![截屏2021-01-25 下午5.15.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.15.09.png)
+![截屏2021-01-25 下午5.15.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220012897.png?token=AWS37JIVE7AQOI2B7HRNLUTBTJYC6)
 
 ## Plotting non-numeric data
 
@@ -109,7 +109,7 @@ data[['Crew','Passengers']].plot(x='Crew', y='Passengers', kind='scatter')
 data['Phase'].value_counts().plot(kind='bar')
 ```
 
-![截屏2021-01-25 下午5.20.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.20.37.png)
+![截屏2021-01-25 下午5.20.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220012805.png?token=AWS37JM5PCTGBZ63CJ4WRK3BTJYDM)
 
 
 
@@ -140,13 +140,13 @@ with open('AirCrashes.csv','r') as infile:
 text
 ```
 
-![截屏2021-01-25 下午5.30.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.30.43.png)
+![截屏2021-01-25 下午5.30.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220012846.png?token=AWS37JMD7FHRA4V2DLNUAV3BTJYD2)
 
 ```python
 print(text)
 ```
 
-![截屏2021-01-25 下午5.31.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.31.31.png)
+![截屏2021-01-25 下午5.31.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220012909.png?token=AWS37JLJXGRPK3ZCFH5ZH6LBTJYEC)
 
 ## Step 2 Tidy up the raw data file
 
@@ -177,7 +177,7 @@ Now we import the dataset to pandas.
 pd.read_csv('AirCrashes_fixed.csv', header = None).head()
 ```
 
-![截屏2021-01-25 下午5.39.28](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.39.28.png)
+![截屏2021-01-25 下午5.39.28](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013561.png?token=AWS37JJU7523NLNK2V2LE2DBTJYEW)
 
 ## Step 4 Transpose each observation from long to wide and append all observations
 
@@ -209,7 +209,7 @@ for chunk in chunky_data:
 master
 ```
 
-![截屏2021-01-25 下午5.44.51](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-25 下午5.44.51.png)
+![截屏2021-01-25 下午5.44.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220013810.png?token=AWS37JICZ27LWTHINGSI5WTBTJYE6)
 
 ```python
 column_headers = data[0].unique().tolist()  # Get the data again

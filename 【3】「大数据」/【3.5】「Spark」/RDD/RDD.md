@@ -140,7 +140,7 @@ These functions are probably the most commonly used functions when dealing with 
   map_exp_rdd.take(4)
   ```
 
-  ![截屏2020-12-12 下午4.00.20](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午4.00.20.png)
+  ![截屏2020-12-12 下午4.00.20](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220110981.png?token=AWS37JJQW6U27PFHBWBEO4LBTJ644)
 
   
 
@@ -150,7 +150,7 @@ These functions are probably the most commonly used functions when dealing with 
   map_exp_rdd_1.take(4)
   ```
 
-  ![截屏2020-12-12 下午4.01.00](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午4.01.00.png)
+  ![截屏2020-12-12 下午4.01.00](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220110225.png?token=AWS37JJ4X5V4QGKMYIA7YETBTJ65A)
 
   
 
@@ -164,7 +164,7 @@ These functions are probably the most commonly used functions when dealing with 
   map_exp_rdd_1.take(4)
   ```
 
-  ![截屏2020-12-12 下午4.01.38](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午4.01.38.png)
+  ![截屏2020-12-12 下午4.01.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220110308.png?token=AWS37JITCG6PBIW5JBOJQF3BTJ65K)
 
   
 
@@ -182,7 +182,7 @@ These functions are probably the most commonly used functions when dealing with 
   map_exp_rdd_2.take(4)
   ```
 
-  ![截屏2020-12-12 下午4.02.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午4.02.36.png)
+  ![截屏2020-12-12 下午4.02.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111183.png?token=AWS37JL4OS5MI254FIZ35XLBTJ66I)
 
   
 
@@ -192,7 +192,7 @@ These functions are probably the most commonly used functions when dealing with 
   map_exp_rdd_3.take(4)
   ```
 
-  ![截屏2020-12-12 下午4.02.53](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午4.02.53.png)
+  ![截屏2020-12-12 下午4.02.53](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111755.png?token=AWS37JPIFYH2TU6Q7W5FUUDBTJ66U)
 
 ​	**mapValues()**
 
@@ -205,7 +205,7 @@ mapValues_exp_rdd = map_exp_rdd_3
 mapValues_exp_rdd.take(4)
 ```
 
-![截屏2020-12-12 下午3.58.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午3.58.31.png)
+![截屏2020-12-12 下午3.58.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111997.png?token=AWS37JLRQWON2RF7G6AJZC3BTJ67A)
 
 ```python
 # Uncomment the command below to install numpy
@@ -215,7 +215,7 @@ mapValues_exp_rdd_1 = mapValues_exp_rdd.mapValues(lambda x: np.mean(x))
 mapValues_exp_rdd_1.take(4)
 ```
 
-![截屏2020-12-12 下午4.18.05](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午4.18.05.png)
+![截屏2020-12-12 下午4.18.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111673.png?token=AWS37JKJH2LK35Z5WKAR43TBTJ67I)
 
 When using mapValues(), the x in the above lambda function refers to the element value, not including the element key.
 
@@ -234,7 +234,7 @@ flatMap_exp_rdd_1 = flatMap_exp_rdd.flatMap(lambda x: x)
 flatMap_exp_rdd_1.collect()
 ```
 
-![截屏2020-12-12 下午4.22.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-12 下午4.22.45.png)
+![截屏2020-12-12 下午4.22.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111238.png?token=AWS37JJP3TY6ILEDB7LFST3BTJ67U)
 
 ​	**`flatMapValues()`**
 
@@ -257,7 +257,7 @@ flatMapValues_exp_rdd = sc.parallelize(my_data)
 flatMapValues_exp_rdd.collect()
 ```
 
-![截屏2020-12-13 下午2.54.02](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-13 下午2.54.02.png)
+![截屏2020-12-13 下午2.54.02](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111018.png?token=AWS37JIIR4PF4RJOXZGE7JLBTJ7AC)
 
 ```python
 # merge A,B,and C columns into on column and add the type column
@@ -265,7 +265,7 @@ flatMapValues_exp_rdd_1 = flatMapValues_exp_rdd.flatMapValues(lambda x: list(zip
 flatMapValues_exp_rdd_1.collect()
 ```
 
-![截屏2020-12-13 下午2.54.55](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-13 下午2.54.55.png)
+![截屏2020-12-13 下午2.54.55](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111769.png?token=AWS37JILRI66IDDHSR5YMBTBTJ7A2)
 
 ```python
 # unpack the element values
@@ -273,7 +273,7 @@ flatMapValues_exp_rdd_2 = flatMapValues_exp_rdd_1.map(lambda x: [x[0]] + list(x[
 flatMapValues_exp_rdd_2.collect()
 ```
 
-![截屏2020-12-13 下午2.59.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-13 下午2.59.59.png)
+![截屏2020-12-13 下午2.59.59](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220111994.png?token=AWS37JNXVXH5QVA3MBMF3WTBTJ7BW)
 
 
 
@@ -286,7 +286,7 @@ iris_rdd = sc.textFile('iris.csv', use_unicode=True)
 iris_rdd.take(2)
 ```
 
-![截屏2020-12-13 下午3.08.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-13 下午3.08.17.png)
+![截屏2020-12-13 下午3.08.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220112108.png?token=AWS37JNAM27CSUIKFDGPESLBTJ7CO)
 
 ```python
 # We will use the data from iris.csv and convert it into a key value pair using map() function.
@@ -296,7 +296,7 @@ iris_rdd_2 = iris_rdd.map(lambda x: x.split(',')).\
 iris_rdd_2.take(5)
 ```
 
-![截屏2020-12-13 下午3.13.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2020-12-13 下午3.13.50.png)
+![截屏2020-12-13 下午3.13.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220112193.png?token=AWS37JJRONHB5JA7WHWYQUTBTJ7CS)
 
 ​	**Accumulator**
 

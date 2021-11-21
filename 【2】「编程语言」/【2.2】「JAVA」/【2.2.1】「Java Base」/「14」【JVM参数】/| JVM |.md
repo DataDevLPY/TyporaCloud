@@ -1,6 +1,6 @@
 # JVM
 
-![截屏2021-07-02 下午5.31.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-07-02 下午6.14.46.png)
+![截屏2021-07-02 下午5.31.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220038409.png?token=AWS37JOD4ZJMQKVQW4O6OKTBTJ3DY)
 
 
 

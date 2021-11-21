@@ -43,13 +43,15 @@
 
 ## Yarn 模式
 
- ![截屏2021-07-24 下午4.28.29](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-07-24 下午4.28.29.png)
+![截屏2021-07-24 下午4.28.29](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220124451.png?token=AWS37JNF2M4KFVSPW3MXRA3BTKAQS) 
 
-![截屏2021-07-24 下午4.30.57](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-07-24 下午4.30.57.png)
+![截屏2021-07-24 下午4.30.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220124298.png?token=AWS37JLUYKHW3LSAE2UZBQTBTKAQY)
 
-![截屏2021-07-24 下午4.48.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-07-24%20%E4%B8%8B%E5%8D%884.48.40.png?token=AWS37JIXRMREKNTBODN6Z5LBTION2)
+![截屏2021-07-24 下午4.30.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220124020.png?token=AWS37JM33T764PTU4L4ZWTLBTKARO)
 
-![截屏2021-07-24 下午4.49.11](/Users/peiyang/Typora Notebook/【大数据】/「5」【Flink】/Flink Java/截屏2021-07-24 下午4.49.11.png)
+![截屏2021-07-24 下午4.48.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220119280.png?token=AWS37JKBQYW25OGFVXBFCQDBTJ74I)
+
+
 
 
 

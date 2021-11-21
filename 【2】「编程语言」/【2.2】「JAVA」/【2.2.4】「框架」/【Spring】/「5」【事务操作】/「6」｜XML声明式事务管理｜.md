@@ -1,8 +1,8 @@
 ## XML声明式事务管理
 
-![截屏2021-07-11 上午11.14.38](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-07-11 上午11.14.38.png)
+![截屏2021-07-11 上午11.14.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220047444.png?token=AWS37JK6FXH3FLBZKMP4KDLBTJ4EI)
 
-![截屏2021-07-11 上午11.14.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-07-11 上午11.14.52.png)
+![截屏2021-07-11 上午11.14.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220047438.png?token=AWS37JIYNHAKB5OF7PNQKOLBTJ4EQ)
 
 
 

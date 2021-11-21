@@ -16,7 +16,7 @@ InPut，OutPut  Stream 输入输出流
 
 java IO流的四大基本流
 
-![截屏2021-06-23 下午9.02.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-23 下午9.02.48.png)
+![截屏2021-06-23 下午9.02.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220033491.png?token=AWS37JM2FYTP43XKU6IMJ73BTJ2TE)
 
 
 
@@ -40,7 +40,7 @@ java IO流的四大基本流
 
 
 
-![截屏2021-06-23 下午10.29.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-23 下午10.29.44.png)
+![截屏2021-06-23 下午10.29.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220033765.png?token=AWS37JIQVX26H7B4DMUKSWLBTJ2TK)
 
 
 
@@ -374,7 +374,7 @@ public class SequenceInputStreamDemo {
 
 RandomAccessFile
 
-![截屏2021-06-25 下午8.53.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-25 下午8.53.01.png)
+![截屏2021-06-25 下午8.53.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220034128.png?token=AWS37JKZDBAZJXC5X3EOQZDBTJ2U2)
 
 
 
@@ -384,13 +384,13 @@ RandomAccessFile
 
 ## 序列化与反序列化
 
-![截屏2021-06-26 下午1.30.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-26 下午1.30.18.png)
+![截屏2021-06-26 下午1.30.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220034476.png?token=AWS37JKLIJQF6SIXC4KYWB3BTJ2VA)
 
 ObjectOutputSream
 
 ObjectInputSream
 
-![截屏2021-06-26 下午12.22.29](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-26 下午12.22.29.png)
+![截屏2021-06-26 下午12.22.29](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220034441.png?token=AWS37JNLTUUNNS3PIACEKYLBTJ2VG)
 
 注意：
 

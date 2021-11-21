@@ -46,5 +46,5 @@ if __name__ == '__main__':
         sleep(1)
 ```
 
-![截屏2021-01-22 下午9.26.20](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午9.26.20.png)
+![截屏2021-01-22 下午9.26.20](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220105963.png?token=AWS37JPWETJQUL3BDQDHGL3BTJ6J4)
 

@@ -19,11 +19,11 @@ JDK: Java Development Kit
 我们想要开发一个Java程序，就需要一个JDK。
 ```
 
-![截屏2021-11-12 下午5.55.33](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-11-12 下午5.55.33.png)
+![截屏2021-11-12 下午5.55.33](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220050982.png?token=AWS37JI7O64AH2TZANMTLWDBTJ4PU)
 
 ### JDK安装目录
 
-![截屏2021-11-12 下午5.57.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-11-12 下午5.57.31.png)
+![截屏2021-11-12 下午5.57.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220050330.png?token=AWS37JJDCIQ2PL3N5FBINVTBTJ4P4)
 
 
 

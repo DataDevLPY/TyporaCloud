@@ -4,7 +4,7 @@
 
 ### getExecutionEnvironment
 
-![截屏2021-07-24 下午11.18.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-07-24%20%E4%B8%8B%E5%8D%8811.18.51.png?token=AWS37JPYAH3CYTXUXWKNVV3BTIOTO)
+![截屏2021-07-24 下午11.18.51](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220125992.png?token=AWS37JMRBGODJSGQNXKWN2DBTKAVK)
 
 ```java
 ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
@@ -12,7 +12,7 @@ ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
 StreamExecutionEnvironment env = SteamExecutionEnvironment.getExecutionEnvironment();
 ```
 
-![截屏2021-07-24 下午11.20.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/img/%E6%88%AA%E5%B1%8F2021-07-24%20%E4%B8%8B%E5%8D%8811.20.43.png?token=AWS37JLKXTKF5TP6OKS44BLBTIOTQ)
+![截屏2021-07-24 下午11.20.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220125800.png?token=AWS37JPXX7QXP45LLJSLKCDBTKAVO)
 
 
 

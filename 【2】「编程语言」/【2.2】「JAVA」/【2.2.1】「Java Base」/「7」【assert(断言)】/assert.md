@@ -6,7 +6,7 @@
 
 需要手动开启-ea
 
-![截屏2021-06-26 下午8.49.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-26 下午8.49.59.png)
+![截屏2021-06-26 下午8.49.59](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220033263.png?token=AWS37JOEKBAXOG3YEYUAACDBTJ2Q6)
 
 
 

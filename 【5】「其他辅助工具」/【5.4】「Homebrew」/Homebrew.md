@@ -25,7 +25,7 @@ CORE_TAP_REPO = "git://mirrors.ustc.edu.cn/homebrew-core.git".freeze
 /usr/bin/ruby ~/brew_install
 ```
 
-![截屏2021-07-15 上午12.42.56](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-07-15 上午12.42.56.png)
+![截屏2021-07-15 上午12.42.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220004556.png?token=AWS37JMLNL6NGFOWYT6YOTTBTJXDC)
 
 出现这个因为源不通，代码无法下载到本地，解决方法是更换成国内镜像源，执行如下命令，更换到中科院的镜像：
 

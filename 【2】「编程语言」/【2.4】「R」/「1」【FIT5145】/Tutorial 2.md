@@ -3,13 +3,13 @@ library(tidyverse)
 ped_wide <- read_csv("melb_walk_wide.csv")
 ```
 
-![截屏2021-02-04 下午8.57.30](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午8.57.30.png)
+![截屏2021-02-04 下午8.57.30](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054098.png?token=AWS37JJHRNR5POJOP6BZTDTBTJ464)
 
 ```R
 ped_wide %>% head(3)
 ```
 
-![截屏2021-02-04 下午8.58.46](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午8.58.46.png)
+![截屏2021-02-04 下午8.58.46](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054699.png?token=AWS37JNG7XAK2WGIYJDVWKLBTJ47A)
 
 
 
@@ -26,7 +26,7 @@ ped_wide %>%
              )
 ```
 
-![截屏2021-02-04 下午9.06.24](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.06.24.png)
+![截屏2021-02-04 下午9.06.24](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054451.png?token=AWS37JNH7D6HYHDXMG6XZFLBTJ47O)
 
 
 
@@ -51,7 +51,7 @@ ped <- ped_wide %>%
 ped %>% head(3)
 ```
 
-![截屏2021-02-04 下午9.13.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.13.52.png)
+![截屏2021-02-04 下午9.13.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054183.png?token=AWS37JP5MU4GWN7XC3MM6K3BTJ47W)
 
 
 
@@ -71,7 +71,7 @@ state_lib_jan_one <- ped %>%
 state_lib_jan_one
 ```
 
-![截屏2021-02-04 下午9.18.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.18.44.png)
+![截屏2021-02-04 下午9.18.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054673.png?token=AWS37JI5JWARWTQZ3GAQWFLBTJ476)
 
 
 
@@ -121,7 +121,7 @@ state_lib_jan_one %>%
   geom_line()
 ```
 
-![截屏2021-02-04 下午9.31.04](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.31.04.png)
+![截屏2021-02-04 下午9.31.04](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054890.png?token=AWS37JJTHHYPKGTRJFITFI3BTJ5AK)
 
 
 
@@ -134,7 +134,7 @@ state_lib_jan_one %>%
   geom_bar(stat = "identity")
 ```
 
-![截屏2021-02-04 下午9.30.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.30.50.png)
+![截屏2021-02-04 下午9.30.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054542.png?token=AWS37JNCTXTSFCGHW4GGMRDBTJ5AQ)
 
 
 
@@ -157,7 +157,7 @@ state_lib %>%
   geom_boxplot()
 ```
 
-![截屏2021-02-04 下午9.31.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.31.18.png)
+![截屏2021-02-04 下午9.31.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054732.png?token=AWS37JNNFHM2KA6JPYEGP7TBTJ5AY)
 
 
 
@@ -172,7 +172,7 @@ state_lib %>%
   geom_boxplot()
 ```
 
-![截屏2021-02-04 下午9.31.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.31.44.png)
+![截屏2021-02-04 下午9.31.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054198.png?token=AWS37JMHCCGN2GKWCFZTDU3BTJ5BI)
 
 
 
@@ -190,7 +190,7 @@ mc_sl <- ped %>%
 mc_sl %>% head(3)
 ```
 
-![截屏2021-02-04 下午9.34.58](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.34.58.png)
+![截屏2021-02-04 下午9.34.58](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220054966.png?token=AWS37JOHSHHQGDWRHEEYLQTBTJ5BY)
 
 ```R
 # How many rows and columns are in the data mc_sl?
@@ -231,7 +231,7 @@ mc_sl %>%
   facet_wrap(~ Sensor)
 ```
 
-![截屏2021-02-04 下午9.42.33](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-04 下午9.42.33.png)
+![截屏2021-02-04 下午9.42.33](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220055526.png?token=AWS37JMA4QRYDQRKDBNC36LBTJ5CE)
 
 
 
@@ -312,5 +312,5 @@ ped %>%
        subtitle = "Greater proportion of foot traffic at the State Library than Melbourne Central during the afternoon")
 ```
 
-![截屏2021-02-05 下午1.32.11](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-05 下午1.32.11.png)
+![截屏2021-02-05 下午1.32.11](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220055975.png?token=AWS37JOLQZBIVA7AE7L574TBTJ5CS)
 

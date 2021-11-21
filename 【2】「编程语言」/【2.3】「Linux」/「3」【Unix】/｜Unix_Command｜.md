@@ -111,7 +111,7 @@ mkdir filename
 
 ## Practice 1  -- less
 
-![截屏2021-02-01 下午9.15.54](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 下午9.15.54.png)
+![截屏2021-02-01 下午9.15.54](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220051929.png?token=AWS37JIT4S5BEWOY5HJBAZTBTJ4WY)
 
 
 
@@ -152,7 +152,7 @@ cat book*.txt
 
 ## Practice 5 -- sort
 
-![截屏2021-02-01 下午9.39.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 下午9.39.22.png)
+![截屏2021-02-01 下午9.39.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220052041.png?token=AWS37JPKEBX6ZZ5GG5PMVULBTJ4W6)
 
 
 

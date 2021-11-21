@@ -1,6 +1,6 @@
 ## 批量操作
 
-![截屏2021-07-10 下午7.56.25](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-07-10 下午7.56.25.png)
+![截屏2021-07-10 下午7.56.25](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220044954.png?token=AWS37JKTVMKPJHTLLGPL4DLBTJ32I)
 
 
 

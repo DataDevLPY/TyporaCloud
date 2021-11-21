@@ -2,13 +2,13 @@
 
 
 
-![截屏2021-07-04 下午1.30.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-07-04 下午1.30.01.png)
+![截屏2021-07-04 下午1.30.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220041746.png?token=AWS37JIAM3PRNNUFZJP7PDTBTJ3PG)
 
 
 
 		1. Spring是轻量级的开源的JavaEE的框架
-  		2. Spring可以解决企业应用开发的复杂性
-  		3. Sping有两个核心部分：IOC和Aop
+		2. Spring可以解决企业应用开发的复杂性
+		3. Sping有两个核心部分：IOC和Aop
 
 
 

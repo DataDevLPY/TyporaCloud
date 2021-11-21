@@ -69,5 +69,5 @@ consumer = connect_kafka_consumer()
 consume_messages(consumer)
 ```
 
-![截屏2021-01-22 下午10.16.40](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-22 下午10.16.40.png)
+![截屏2021-01-22 下午10.16.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220103062.png?token=AWS37JOPT3CVDT2MADW2ACLBTJ6A2)
 

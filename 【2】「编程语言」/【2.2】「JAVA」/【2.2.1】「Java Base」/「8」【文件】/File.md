@@ -53,7 +53,7 @@ public class FileDemo3 {
 
 
 
-![截屏2021-06-22 下午11.38.30](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-22 下午11.38.30.png)
+![截屏2021-06-22 下午11.38.30](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220033687.png?token=AWS37JLZJ4JSMILIKHS3IMTBTJ2RQ)
 
 
 
@@ -61,9 +61,9 @@ public class FileDemo3 {
 
 
 
-![截屏2021-06-22 下午11.38.30](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-22 下午11.51.49.png)
+![截屏2021-06-22 下午11.38.30](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220033341.png?token=AWS37JO7UC75MMHV57Q3IJTBTJ2RW)
 
-![截屏2021-06-23 下午3.16.06](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-06-23 下午3.16.06.png)
+![截屏2021-06-23 下午3.16.06](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220033153.png?token=AWS37JKMEX4M732MVU4HJIDBTJ2R2)
 
 
 

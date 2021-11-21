@@ -41,7 +41,7 @@ df_memory = spark.read.format("csv")\
 df_memory.printSchema()
 ```
 
-![截屏2021-01-18 下午8.18.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午8.18.01.png)
+![截屏2021-01-18 下午8.18.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101491.png?token=AWS37JNWJWU2FG2TL25LUDLBTJ5ZQ)
 
 ```python
 df_process = spark.read.format("csv")\
@@ -52,7 +52,7 @@ df_process = spark.read.format("csv")\
 df_process.printSchema()
 ```
 
-![截屏2021-01-18 下午8.18.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午8.18.42.png)
+![截屏2021-01-18 下午8.18.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101911.png?token=AWS37JLX6CDKH6GND5WTVBTBTJ5ZY)
 
 **1.For each column in each dataframe above,**
 
@@ -129,7 +129,7 @@ from pyspark.sql.functions import when, isnan, count, col
 df_memory.select([count(when(isnan(x) | col(x).isNull(),x)).alias(x) for x in df_memory.columns]).show()
 ```
 
-![截屏2021-01-18 下午8.23.46](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午8.23.46.png)
+![截屏2021-01-18 下午8.23.46](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101498.png?token=AWS37JMWNT62PVVEKDKTLJTBTJ52G)
 
 ```python
 df_process.select([count(when(isnan(x) | col(x).isNull(),x)).alias(x) for x in df_process.columns]).show()
@@ -153,21 +153,21 @@ df_process.cache()
 df_memory.groupby('attack').count().show()
 ```
 
-![截屏2021-01-18 下午8.29.16](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午8.29.16.png)
+![截屏2021-01-18 下午8.29.16](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101890.png?token=AWS37JLKDFAF2NJRPVOJ26DBTJ52K)
 
 ```python
 # In process
 df_process.groupby('attack').count().show()
 ```
 
-![截屏2021-01-18 下午8.29.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午8.29.37.png)
+![截屏2021-01-18 下午8.29.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101925.png?token=AWS37JIT6LAUMRWZXSSP33LBTJ52Q)
 
 ```python
 # show the count of each kind of attack in process activity based on the column “type”.
 df_process.groupby('attack','Type').count().show()
 ```
 
-![截屏2021-01-18 下午8.30.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-18 下午8.30.35.png)
+![截屏2021-01-18 下午8.30.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220101089.png?token=AWS37JKMLWFNKJNIA26WVD3BTJ52U)
 
 **2. For each numeric feature in each activity, show the basic statistics (including count,
 mean, stddev, min, max); for each non-numeric feature in each activity, display the
@@ -207,10 +207,10 @@ df_non_num_memory.sort('count', ascending = False).show(10)
    company, describe your plots and discuss the findings from the plots**
 
    * **Hint - 1: you can use the basic plots (e.g. histograms, line charts, scatter
-plots) for relationship between a column and the “attack” label (such as “ts”
-and “attack”, “PID” and “attack”); or more advanced plots like correlation plots
-for relationship between each column; 2: if your data is too large for the
-plotting, consider using sampling before plotting**
+   plots) for relationship between a column and the “attack” label (such as “ts”
+   and “attack”, “PID” and “attack”); or more advanced plots like correlation plots
+   for relationship between each column; 2: if your data is too large for the
+   plotting, consider using sampling before plotting**
    * **100 words max for each plot’s description and discussion**
 
 

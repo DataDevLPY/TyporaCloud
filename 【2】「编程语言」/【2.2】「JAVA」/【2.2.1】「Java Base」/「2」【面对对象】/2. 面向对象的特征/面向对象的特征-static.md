@@ -2,13 +2,13 @@
 
 ## Static
 
-![截屏2021-05-19 下午3.29.44](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-05-19 下午3.29.44.png)
+![截屏2021-05-19 下午3.29.44](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220025500.png?token=AWS37JNRSHWZJNYSJ7PLS6DBTJZUG)
 
 
 
-![截屏2021-05-19 下午5.19.21](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-05-19 下午5.19.21.png)
+![截屏2021-05-19 下午5.19.21](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220025009.png?token=AWS37JMDUD3AFIFKPIICHETBTJZUO)
 
-![截屏2021-05-19 下午5.27.32](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-05-19 下午5.27.32.png)
+![截屏2021-05-19 下午5.27.32](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220025110.png?token=AWS37JPQNTZJJWLEOGHPB5DBTJZUQ)
 
 * 静态方法可以重载
 

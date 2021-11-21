@@ -159,5 +159,3 @@ public class Orders {
 
 （1）使用p名称空间注入，可以简化基于xml的
 
-![B5EFAF2E-0C1B-4421-99F3-8D2336121486](/Users/peiyang/Typora Notebook/【JAVA】/【框架】/【Spring】/B5EFAF2E-0C1B-4421-99F3-8D2336121486.PNG)
-

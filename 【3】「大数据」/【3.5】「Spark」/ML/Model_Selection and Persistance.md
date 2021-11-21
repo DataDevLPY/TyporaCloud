@@ -60,7 +60,7 @@ print('Best Param for DT: ', bestModel.stages[-1]._java_obj.paramMap())
 
 ```
 
-![截屏2021-01-17 上午11.54.15](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-17 上午11.54.15.png)
+![截屏2021-01-17 上午11.54.15](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108749.png?token=AWS37JPDHVYAGN6F5QKSEA3BTJ6TC)
 
 
 
@@ -112,7 +112,7 @@ bestModel_tv = model.bestModel
 print(bestModel_tv.stages[-1]._java_obj.paramMap())
 ```
 
-![截屏2021-01-17 上午11.56.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-17 上午11.56.50.png)
+![截屏2021-01-17 上午11.56.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220108739.png?token=AWS37JLEA7LFOMEBOBEX2G3BTJ6TO)
 
 
 
