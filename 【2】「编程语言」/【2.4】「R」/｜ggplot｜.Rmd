@@ -1,0 +1,216 @@
+---
+title: "ggplot"
+author: "Peiyang"
+date: "4/10/2021"
+output: html_document
+---
+```{r}
+library(ggplot2)
+library(ggalt)
+library(gganimate)
+library(gapminder)
+library(ggExtra)
+library(ggcorrplot)
+library(treemapify)
+library(fpp3)
+library(ggdendro)
+```
+
+
+## scatter plot
+```{r}
+data("midwest", package = 'ggplot2')
+
+midwest
+```
+
+```{r}
+options(scipen=999)
+```
+ 
+```{r}
+ggplot(midwest, aes(x=area, y=poptotal)) +
+  geom_point(aes(col=state, size=popdensity)) +
+  ylim(0,2500000) +
+  xlim(0,0.1) +
+  geom_smooth(se=F)
+```
+
+```{r}
+ggplot(midwest, aes(x=area, y=poptotal)) +
+  geom_point(aes(col=state, size=popdensity)) +
+  ylim(0,2500000) +
+  xlim(0,0.1) +
+  geom_encircle(data = midwest_filtered, aes(x=area, y=poptotal))
+```
+
+```{r}
+midwest_filtered = midwest[midwest$poptotal > 250000 &
+                             midwest$poptotal <= 500000 &
+                             midwest$area > 0.01 &
+                             midwest$area <= 0.1,]
+```
+
+
+
+#jitter
+```{r}
+data(mpg)
+
+ggplot(mpg, aes(cty,hwy)) +
+  geom_point()
+
+ggplot(mpg, aes(cty,hwy)) +
+  geom_jitter()
+```
+# count
+```{r}
+ggplot(mpg, aes(cty,hwy)) +
+  geom_count(aes(color=model))
+```
+
+```{r} 
+data(mpg)
+mpg_filtered = mpg[mpg$manufacturer %in% c('audi','ford','honda','hyundai'), ]
+```
+
+```{r}
+ggplot(mpg, aes(displ,cty))+
+  geom_jitter(aes(col=manufacturer, size=hwy))
+
+p=ggplot(mpg,aes(cty,hwy))+
+  geom_point()
+ggMarginal(p, type = 'histogram')
+ggMarginal(p, type = 'boxplot')
+```
+
+```{r}
+data("gapminder")
+
+ggplot(gapminder, aes(gdpPercap, lifeExp, size =pop, frame=year))+
+  geom_point()+
+  facet_grid(~continent)
+```
+
+
+```{r}
+data("mtcars")
+correlation = cor(mtcars)
+correlation
+ggcorrplot(mtcars, lab=T, method='circle', type='lower')
+
+```
+
+
+```{r}
+mtcars$car_name = rownames(mtcars)
+mtcars$mpg_z=round(mtcars$mpg - mean(mtcars$mpg)/sd(mtcars$mpg),2)
+```
+
+
+```{r}
+mtcars$mpg_type = ifelse(mtcars$mpg_z <16, 'below', 'above')
+```
+
+```{r}
+mtcars$car_name = as.factor(mtcars$car_name)
+```
+
+```{r}
+ggplot(mtcars, aes(x=car_name,y=mpg_z, label=mpg_z))+
+  geom_bar(stat='identity',aes(fill=mpg_type)) +
+  scale_fill_manual(name='Milleage',
+                    labels=c('Above','Below'),
+                    values=c('above'='red','below'='green'))+
+  coord_flip()
+```
+
+
+```{r}
+cty_mpg = aggregate(mpg$cty, by =list(mpg$manufacturer),FUN=mean)
+cty_mpg
+
+colnames(cty_mpg) = c('make','mileage')
+cty_mpg=cty_mpg[order(cty_mpg$mileage),]
+cty_mpg$make=as.factor(cty_mpg$make,levels=cty_mpg$make)
+ggplot(cty_mpg,aes(x=make,y=mileage))+
+  geom_bar(stat='identity')
+
+```
+
+#destribution
+```{r}
+ggplot(mpg,aes(displ))+
+  geom_histogram(aes(fill=class))+
+  scale_fill_brewer(palette='Spectral')
+```
+
+```{r}
+ggplot(mpg,aes(manufacturer))+
+  geom_bar(aes(fill=class))+
+  scale_fill_brewer(palette='Spectral')
+```
+
+
+```{r}
+ggplot(mpg,aes(cty))+
+  geom_density(aes(fill=factor(cyl)),alpha=0.5)
+```
+
+
+
+```{r}
+ggplot(mpg,aes(manufacturer,cty))+
+  geom_boxplot()+
+  geom_dotplot(binaxis='y',stackdir='center',dotsize=0.4)
+```
+
+
+```{r}
+df = as.data.frame(table(mpg$class))
+colnames(df) = c('class','frequency')
+ggplot(df,aes(x="",y=frequency, fill=factor(class)))+
+  geom_bar(stat='identity')+
+  coord_polar(theta='y',start=0)
+```
+
+#treemap
+```{r}
+a = treemapify()
+```
+
+
+
+```{r}
+a=hclust(dist(USArrests),'ave')
+ggdendrogram(a,rotate=T,size=2)
+```
+
+
+```{r}
+data(iris)
+pca_mod=prcomp(iris[c(1:4)])
+df_pc=data.frame(pca_mod$x, Species=iris$Species)
+
+ggplot(df_pc, aes(PC1,PC2, col=Species))+
+  geom_point(aes(shape=Species))+
+  geom_encircle(data=df_pc[df_pc$Species=='virginica', ])+
+  geom_encircle(data=df_pc[df_pc$Species=='setosa', ])+
+  geom_encircle(data=df_pc[df_pc$Species=='versicolor', ])
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

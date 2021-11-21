@@ -1,0 +1,138 @@
+## 修改和删除
+
+```java
+package cn.peiyang.jdbc.dao;
+
+import cn.peiyang.jdbc.entity.Book;
+
+public interface BookDao {
+    public void add(Book book);
+    public void update(Book book);
+    public void delete(String id);
+}
+
+```
+
+ 
+
+```java
+package cn.peiyang.jdbc.dao;
+
+
+import cn.peiyang.jdbc.entity.Book;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class BookDaoImpl implements BookDao{
+
+    //注入JdbcTemplate
+    @Autowired
+    private JdbcTemplate jdbcTemplate;
+
+
+    //添加方法
+    @Override
+    public void add(Book book) {
+
+        String sql="insert into t_book values(?,?,?)";
+
+        //调用实现方法
+        Object[] args = {book.getUserId(),book.getUsername(),book.getUstatus()};
+        int update = jdbcTemplate.update(sql,args);
+        System.out.println(update);
+    }
+
+    @Override
+    public void update(Book book) {
+        String sql = "update t_book set username=?, ustatus=? where user_id=?";
+        Object[] args = {book.getUsername(),book.getUstatus()，book.getUserId()};
+        int update = jdbcTemplate.update(sql,args);
+        System.out.println(update);
+    }
+
+    @Override
+    public void delete(String id) {
+        String sql = "delete from t_book where user_id=?";
+        int update = jdbcTemplate.update(sql,id);
+        System.out.println(update);
+    }
+}
+
+```
+
+
+
+```java
+package cn.peiyang.jdbc.service;
+
+
+import cn.peiyang.jdbc.dao.BookDao;
+import cn.peiyang.jdbc.entity.Book;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BookService {
+    //注入dao
+    @Autowired
+    private BookDao bookDao;
+
+    public void addBook(Book book){
+        bookDao.add(book);
+    }
+
+    public void updateBook(Book book){
+        bookDao.update(book);
+    }
+
+    public void deleteBook(String id){
+        bookDao.delete(id);
+    }
+
+}
+```
+
+测试
+
+```java
+package cn.peiyang.jdbc.test;
+
+import cn.peiyang.jdbc.service.BookService;
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class bookTest {
+
+    @Test
+    public void testBook(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("bean1.xml");
+
+        BookService bookService = context.getBean("bookService",BookService.class);
+
+        /*Book book = new Book();
+        book.setUserId("1");
+        book.setUsername("java");
+        book.setUstatus("a");
+        bookService.addBook(book);
+        */
+
+        /*
+        Book book1 = new Book();
+        book1.setUserId("1");
+        book1.setUsername("javaCool");
+        book1.setUstatus("ann");
+        bookService.updateBook(book1);
+
+
+         */
+        bookService.deleteBook("1");
+
+
+    }
+
+}
+```
+
