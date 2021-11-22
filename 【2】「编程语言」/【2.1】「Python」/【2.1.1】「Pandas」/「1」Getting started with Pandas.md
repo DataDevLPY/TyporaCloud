@@ -367,7 +367,7 @@ grouped = foo_bar.groupby(['A','B']).sum()
 grouped
 ```
 
-![截屏2021-01-25 上午10.04.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009648.png?token=AWS37JJGCHCQQIEKDCSAKT3BTJXWG)
+![截屏2021-01-25 上午10.04.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009648.png?token=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)
 
 ### 3.6 Time Series
 
@@ -378,7 +378,7 @@ rng = pd.date_range('1/1/2015', periods = 100, freq = 'S')
 rng[1:5]
 ```
 
-![截屏2021-01-25 上午10.07.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009558.png?token=AWS37JJBQXPXHYDOPPN6M6DBTJXWI)
+![截屏2021-01-25 上午10.07.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009558.png?token=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)
 
 Now we'll use that to greate a time series, assigning a random integer to each element of the range:
 
@@ -387,13 +387,15 @@ time_series = pd.Series(np.random.randint(0, 500, len(rng)), index = rng)
 time_series.head()
 ```
 
-![截屏2021-01-25 上午10.17.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009458.png?token=AWS37JI2762OX2WZKO3LLYTBTJXWS)Next, we'll resample the data by binning the one-second raws into minutes (and summing the associated values):
+![截屏2021-01-25 上午10.17.05](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009458.png?token=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)
+
+Next, we'll resample the data by binning the one-second raws into minutes (and summing the associated values):
 
 ```python
 time_series.resample('1Min').sum()
 ```
 
-![截屏2021-01-25 上午10.21.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009878.png?token=AWS37JK5IRSTEETSOJB5GDDBTJXWW)
+![截屏2021-01-25 上午10.21.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009878.png?token=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)
 
 ### 3.7 Reading/Writing to files
 
@@ -411,13 +413,13 @@ new_frame = pd.read_csv('foo.csv')
 new_frame.head()
 ```
 
-![截屏2021-01-25 下午12.15.32](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009217.png?token=AWS37JJ5OQ4XW4X46CYJNXLBTJXXM)
+![截屏2021-01-25 下午12.15.32](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009217.png?token=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)
 
 ```python
 new_frame.iloc[:,1:].head()
 ```
 
-![截屏2021-01-25 下午12.15.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009471.png?token=AWS37JKQXWZJ2QP6OW7KJELBTJXXS)
+![截屏2021-01-25 下午12.15.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009471.png?token=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)
 
 ```python
 fixed_df = pd.read_csv('bikes.csv',
@@ -484,7 +486,7 @@ Now to test that this function does the right thing:
 download_weather_month(2012, 1).head()
 ```
 
-![截屏2021-01-25 下午2.01.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009930.png?token=AWS37JNO7355R6SL2G7GZIDBTJXYM)
+![截屏2021-01-25 下午2.01.38](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009930.png?token=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)
 
 Woohoo! Now we can iteratively request all the months using a single line. This will take a little while to run.
 
@@ -504,7 +506,7 @@ This thing is long, so instead of printing out the whole thing, I'm just going t
 weather_2012.info()
 ```
 
-![截屏2021-01-25 下午2.03.55](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009386.png?token=AWS37JJPQIZ4LKN2YUH7M3LBTJXYW)
+![截屏2021-01-25 下午2.03.55](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009386.png?token=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)
 
 And a quick reminder, if we wanted to save that data to a file:
 
@@ -525,7 +527,7 @@ import matplotlib.pyplot as plt
 plt.plot(df)
 ```
 
-![截屏2021-01-25 下午2.08.14](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009034.png?token=AWS37JMVQEDDKIXYSOTEJJTBTJXYY)
+![截屏2021-01-25 下午2.08.14](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220009034.png?token=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)
 
 ```python
 # nothing to see... in iPython you need to specify where the chart will display, usually it's in a new window
@@ -656,7 +658,7 @@ df_au[header_list[8]]=Area
 df_au
 ```
 
-![截屏2021-01-25 下午2.43.25](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220010097.png?token=AWS37JINPPWFK5TH7VJ5WPDBTJXZM)
+![截屏2021-01-25 下午2.43.25](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture202111220010097.png?token=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)
 
 
 
