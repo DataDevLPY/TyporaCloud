@@ -44,7 +44,7 @@ boston_dropna_df = pd.read_pickle('boston_dropna_df.p') #read the data into two 
 boston_dropna_df.head()
 ```
 
-![截屏2021-01-30 下午9.28.27](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.28.27.png)
+![截屏2021-01-30 下午9.28.27](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028420.png)
 
 ```python
 boston_impute_df = boston_dropna_df.copy()
@@ -77,7 +77,7 @@ lm_fitting_df = boston_dropna_df.drop('y',axis=1)
 lm_fitting_df
 ```
 
-![截屏2021-01-30 下午9.32.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.32.18.png)
+![截屏2021-01-30 下午9.32.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028558.png)
 
 Our target now is the 'AGE' column, we will use the boston_dropna_df as the data to fit, we can use data with missing values to train a model
 
@@ -95,27 +95,27 @@ lm_for_impute.fit(lm_fitting_df[[x for x in lm_fitting_df.columns if x != 'AGE']
 boston_impute_df[boston_impute_df['AGE'].isnull()].head()
 ```
 
-![截屏2021-01-30 下午9.33.48](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.33.48.png)
+![截屏2021-01-30 下午9.33.48](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028539.png)
 
 ```python
 lm_for_impute.predict(boston_impute_df.drop(['AGE','y'],axis=1)) 
 #this uses the other features to predict 'AGE' with the model
 ```
 
-![截屏2021-01-30 下午9.34.55](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.34.55.png)
+![截屏2021-01-30 下午9.34.55](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028015.png)
 
 ```python
 boston_impute_df['AGE'][boston_impute_df['AGE'].isnull()] = lm_for_impute.predict(boston_impute_df.drop(['AGE','y'],axis=1))
 ```
 
-![截屏2021-01-30 下午9.37.56](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.37.56.png)
+![截屏2021-01-30 下午9.37.56](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028032.png)
 
 ```python
 boxplot = pd.DataFrame({'imputed': boston_impute_df['AGE'],'full': boston_df['AGE'],'dropped': boston_dropna_df['AGE']})
 boxplot.plot(kind='box')
 ```
 
-![截屏2021-01-30 下午9.38.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.38.42.png)
+![截屏2021-01-30 下午9.38.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028353.png)
 
 
 
@@ -145,7 +145,7 @@ lm_full.fit(X_train,y_train)
 print ('r-squared for this model = ',lm_full.score(X_test,y_test))
 ```
 
-![截屏2021-01-30 下午9.41.45](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.41.45.png)
+![截屏2021-01-30 下午9.41.45](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028434.png)
 
 # The dropped data
 
@@ -159,7 +159,7 @@ lm_dropped.fit(X_train,y_train)
 print ('r-squared for this model = ',lm_dropped.score(X_test,y_test))
 ```
 
-![截屏2021-01-30 下午9.41.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.41.31.png)
+![截屏2021-01-30 下午9.41.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028518.png)
 
 
 
@@ -175,7 +175,7 @@ lm_impute.fit(X_train,y_train)
 print ('r-squared for this model = ',lm_impute.score(X_test,y_test))
 ```
 
-![截屏2021-01-30 下午9.43.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.43.01.png)
+![截屏2021-01-30 下午9.43.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028571.png)
 
 
 

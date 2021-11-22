@@ -19,13 +19,13 @@ df1.info()
 df1.describe(include=['O']) # 'O' for Objects
 ```
 
-![截屏2021-01-30 上午10.20.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.20.42.png)
+![截屏2021-01-30 上午10.20.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028577.png)
 
 ```python
 df1.isnull().sum()
 ```
 
-![截屏2021-01-30 上午10.21.06](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.21.06.png)
+![截屏2021-01-30 上午10.21.06](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028468.png)
 
 ## Task 2 investigate with missing values for ages
 
@@ -42,19 +42,19 @@ df1['age'].value_counts()
 df1[df1['age'].isnull()].head() # look at some
 ```
 
-![截屏2021-01-30 上午10.27.13](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.27.13.png)
+![截屏2021-01-30 上午10.27.13](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028290.png)
 
 ```python
 df1.boxplot(by = 'pclass')
 ```
 
-![截屏2021-01-30 上午10.27.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.27.50.png)
+![截屏2021-01-30 上午10.27.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028921.png)
 
 ```python
 df1.loc[:,['age','pclass']].boxplot(by = 'pclass')
 ```
 
-![截屏2021-01-30 上午10.28.34](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.28.34.png)
+![截屏2021-01-30 上午10.28.34](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028546.png)
 
 
 
@@ -109,7 +109,7 @@ df2.head() # title at far right
 df2[(df2['Title'] == "Dr") & (df2['sex'] == "male")].mean()
 ```
 
-![截屏2021-01-30 上午10.38.11](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.38.11.png)
+![截屏2021-01-30 上午10.38.11](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230028835.png)
 
 ## Task 3 Mean imputation of age by title
 
@@ -119,5 +119,5 @@ df2["age"].fillna(df2.groupby("Title")["age"].transform("mean"), inplace=True)
 df2.age.describe()
 ```
 
-![截屏2021-01-30 上午10.40.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午10.40.09.png)
+![截屏2021-01-30 上午10.40.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230029548.png)
 

@@ -55,7 +55,7 @@ print (t)
 print(t.encode("raw_unicode_escape").decode("utf-8"))
 ```
 
-![截屏2021-01-28 下午5.01.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 下午5.01.52.png)
+![截屏2021-01-28 下午5.01.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230020610.png)
 
 
 
@@ -149,5 +149,5 @@ tweets_pddf['emoticons'] = emoticon_list
 tweets_pddf.dropna(subset=['emoticons'])
 ```
 
-![截屏2021-01-28 下午5.09.13](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 下午5.09.13.png)
+![截屏2021-01-28 下午5.09.13](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230020487.png)
 

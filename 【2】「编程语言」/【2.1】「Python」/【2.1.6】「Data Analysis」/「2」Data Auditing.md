@@ -27,7 +27,7 @@ print (titanic.shape)
 titanic.head()
 ```
 
-![截屏2021-01-30 上午9.24.18](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.24.18.png)
+![截屏2021-01-30 上午9.24.18](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230025911.png)
 
 
 
@@ -35,19 +35,19 @@ titanic.head()
 titanic.info()
 ```
 
-![截屏2021-01-30 上午9.31.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.31.01.png)
+![截屏2021-01-30 上午9.31.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230025481.png)
 
 ```python
 titanic.describe()
 ```
 
-![截屏2021-01-30 上午9.36.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.36.31.png)
+![截屏2021-01-30 上午9.36.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026421.png)
 
 ```python
 titanic.describe(include=['O'])
 ```
 
-![截屏2021-01-30 上午9.37.50](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.37.50.png)
+![截屏2021-01-30 上午9.37.50](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026650.png)
 
 ```python
 # Lets seperate the titles from the name 
@@ -55,7 +55,7 @@ coltitle = titanic['name'].apply(lambda s: pd.Series({'title': s.split(',')[1].s
 coltitle
 ```
 
-![截屏2021-01-30 上午9.43.43](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.43.43.png)
+![截屏2021-01-30 上午9.43.43](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026964.png)
 
 ```python
 # Add the columns to the titanic dataframe
@@ -65,7 +65,7 @@ titanic = pd.concat([titanic, coltitle], axis=1)
 titanic.head()
 ```
 
-![截屏2021-01-30 上午9.44.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.44.36.png)
+![截屏2021-01-30 上午9.44.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026780.png)
 
 
 
@@ -73,7 +73,7 @@ titanic.head()
 titanic.title.value_counts()
 ```
 
-![截屏2021-01-30 上午9.46.08](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.46.08.png)
+![截屏2021-01-30 上午9.46.08](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026597.png)
 
 ```python
 titanic.title.replace({'Mlle':'Miss', 'the Countess':'Miss', 'Lady':'Miss', 'Mme':'Miss', 'Don':'Mr'},inplace=True)
@@ -83,7 +83,7 @@ titanic.title.replace({'Mlle':'Miss', 'the Countess':'Miss', 'Lady':'Miss', 'Mme
 titanic.drop(['name'], axis=1, inplace=True)
 ```
 
-![截屏2021-01-30 上午9.47.12](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.47.12.png)
+![截屏2021-01-30 上午9.47.12](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026165.png)
 
 ```python
 titanic.embark_town.replace({"Cherborg": "Cherbourg", "Cherbourge": "Cherbourg", "Southamtpon":"Southampton", "queenstown":"Queenstown"}, inplace=True)
@@ -97,13 +97,13 @@ The cross-tabulation of embark_town and embarked below proves the correspondence
 pd.crosstab(titanic["embark_town"], titanic["embarked"])
 ```
 
-![截屏2021-01-30 上午9.50.15](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.50.15.png)
+![截屏2021-01-30 上午9.50.15](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026877.png)
 
 ```python
 titanic.hist(by="who", column="age")
 ```
 
-![截屏2021-01-30 上午9.54.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.54.01.png)
+![截屏2021-01-30 上午9.54.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026933.png)
 
 #### Are there any duplicated records?
 
@@ -113,13 +113,13 @@ If we assume that firstName, lastName and age can uniquely identify a passenger,
 titanic[titanic.duplicated(["firstName", "lastName", "age"], keep=False)]
 ```
 
-![截屏2021-01-30 上午9.56.03](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.56.03.png)
+![截屏2021-01-30 上午9.56.03](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026577.png)
 
 ```python
 titanic[titanic.duplicated(["firstName", "lastName", "age"], keep="first")]
 ```
 
-![截屏2021-01-30 上午9.56.33](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 上午9.56.33.png)
+![截屏2021-01-30 上午9.56.33](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026436.png)
 
 ```python
 titanic.drop_duplicates(["firstName", "lastName", "age"], keep='first', inplace=True)

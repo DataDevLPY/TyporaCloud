@@ -11,7 +11,7 @@ You can alo print out the Beautifulsoup object by calling the prettify() functio
 print(btree.prettify())
 ```
 
-![截屏2021-01-28 上午10.05.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.05.31.png)
+![截屏2021-01-28 上午10.05.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230022266.png)
 
 It is easy to figure out information we would like to extract is stored in the following tags
 
@@ -31,14 +31,14 @@ Each record is stored in " ". To extract information from those tags, except for
 featuretags = btree.find_all("featurename")
 ```
 
-![截屏2021-01-28 上午10.06.42](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.06.42.png)
+![截屏2021-01-28 上午10.06.42](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230022609.png)
 
 ```python
 for feature in featuretags:
 		print(feature.string)
 ```
 
-![截屏2021-01-28 上午10.08.26](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.08.26.png)
+![截屏2021-01-28 上午10.08.26](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230022322.png)
 
 ```python
 featurenames = [feature.string for feature in btree.find_all("featurename")]
@@ -67,7 +67,7 @@ df.index.name = 'ID'
 df.head()
 ```
 
-![截屏2021-01-28 上午10.11.36](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.11.36.png)
+![截屏2021-01-28 上午10.11.36](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230022301.png)
 
 ## Loading and Exploring an XML file
 
@@ -107,14 +107,14 @@ for child in root[0][0]:
 		print(child)
 ```
 
-![截屏2021-01-28 上午10.25.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.25.59.png)
+![截屏2021-01-28 上午10.25.59](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230022098.png)
 
 ```python
 for elem in tree.iter():
     print (elem.tag, elem.text, elem.attrib)
 ```
 
-![截屏2021-01-28 上午10.27.17](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.27.17.png)
+![截屏2021-01-28 上午10.27.17](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230022818.png)
 
 
 
@@ -127,7 +127,7 @@ for el in ltree.xpath('descendant-or-self::text()'):
     print (el)
 ```
 
-![截屏2021-01-28 上午10.31.19](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午10.31.19.png)
+![截屏2021-01-28 上午10.31.19](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230022487.png)
 
 
 

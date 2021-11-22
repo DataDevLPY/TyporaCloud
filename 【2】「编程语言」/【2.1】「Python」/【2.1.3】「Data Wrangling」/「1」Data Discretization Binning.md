@@ -160,7 +160,7 @@ If you pass cut an integer number of bins instead of explicit bin edges, it will
 
 A closely related function, qcut, bins the data based on sample quantiles. Depending on the distribution of the data, using cut will not usually result in each bin having the same number of data points. Since qcut uses sample quantiles instead, by definition you will obtain roughly equal-size bins:
 
-![截屏2021-02-01 上午10.13.57](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午10.13.57.png)
+![截屏2021-02-01 上午10.13.57](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230018552.png)
 
 
 

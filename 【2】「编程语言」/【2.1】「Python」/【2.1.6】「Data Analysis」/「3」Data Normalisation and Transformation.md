@@ -1,22 +1,22 @@
-![截屏2021-02-01 上午11.43.37](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.43.37.png)
+![截屏2021-02-01 上午11.43.37](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026016.png)
 
-![截屏2021-02-01 上午11.43.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.43.52.png)
+![截屏2021-02-01 上午11.43.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230026810.png)
 
-![截屏2021-02-01 上午11.44.06](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.06.png)
+![截屏2021-02-01 上午11.44.06](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027672.png)
 
-![截屏2021-02-01 上午11.44.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.22.png)
+![截屏2021-02-01 上午11.44.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027265.png)
 
-![截屏2021-02-01 上午11.44.40](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.40.png)
+![截屏2021-02-01 上午11.44.40](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027822.png)
 
-![截屏2021-02-01 上午11.44.52](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.44.52.png)
+![截屏2021-02-01 上午11.44.52](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027995.png)
 
-![截屏2021-02-01 上午11.45.09](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.09.png)
+![截屏2021-02-01 上午11.45.09](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027643.png)
 
-![截屏2021-02-01 上午11.45.22](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.22.png)
+![截屏2021-02-01 上午11.45.22](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027122.png)
 
-![截屏2021-02-01 上午11.45.35](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.35.png)
+![截屏2021-02-01 上午11.45.35](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027542.png)
 
-![截屏2021-02-01 上午11.45.47](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.47.png)
+![截屏2021-02-01 上午11.45.47](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230027428.png)
 
 ![截屏2021-02-01 上午11.45.59](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-02-01 上午11.45.59.png)
 

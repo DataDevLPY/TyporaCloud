@@ -26,7 +26,7 @@ str1 = csvdf['Coordinates'].iloc[0] # csvdf.Coordinates
 re.findall(r"-?\d+\.?\d*", str1)
 ```
 
-![截屏2021-01-28 上午8.35.31](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午8.35.31.png)
+![截屏2021-01-28 上午8.35.31](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230021227.png)
 
 The latitude and longitude in the first coordinate have been successfully extracted. Next, we are going to apply the extracting process to every coordinate in the DataFrame. There are multiple ways of doing that. The most straightforward way is to write a FOR loop to iterate over all the coordinates, and apply the above scripts to each individual coordinate. Two Pandas Series can be then used to store latitudes and longitudes. However, we are going to show you how to use some advanced Python programming functionality.
 
@@ -40,7 +40,7 @@ csvdf['lon'] = csvdf['lon'].apply(lambda x: x.rstrip(')'))
 csvdf.drop('Coordinates', 1, inplace = True)
 ```
 
-![截屏2021-01-28 上午9.04.15](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-28 上午9.04.15.png)
+![截屏2021-01-28 上午9.04.15](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230021391.png)
 
 ### Convert types
 

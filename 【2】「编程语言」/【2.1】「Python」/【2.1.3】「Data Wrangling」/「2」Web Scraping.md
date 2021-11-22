@@ -263,7 +263,7 @@ data.keys()
 data
 ```
 
-![截屏2021-01-31 上午10.48.16](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-31 上午10.48.16.png)
+![截屏2021-01-31 上午10.48.16](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230019069.png)
 
 
 

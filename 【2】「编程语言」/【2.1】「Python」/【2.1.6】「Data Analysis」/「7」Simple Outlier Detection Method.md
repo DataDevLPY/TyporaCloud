@@ -25,7 +25,7 @@ bp = df1.boxplot(column='fare')
 # bp = plt.boxplot(df1.fare, 0, 'ro') # red circle
 ```
 
-![截屏2021-01-30 下午9.47.01](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.47.01.png)
+![截屏2021-01-30 下午9.47.01](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230029321.png)
 
 ```python
 # so how do you get 512.3292 from £512, 6s
@@ -53,7 +53,7 @@ So 512.3 is a real value.
 bp = df1.boxplot(column='fare', by = 'pclass')
 ```
 
-![截屏2021-01-30 下午9.48.20](/Users/peiyang/Library/Application Support/typora-user-images/截屏2021-01-30 下午9.48.20.png)
+![截屏2021-01-30 下午9.48.20](https://raw.githubusercontent.com/DataDevLPY/TyporaPicStore/main/Picture/202111230029551.png)
 
 
 
