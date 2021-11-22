@@ -1,3 +1,9 @@
+## 依赖拉取本地mvn
+
+```shell
+mvn install:install-file -DgroupId=com.jd.security.codesec -DartifactId=ajdv -Dversion=0.1 -Dpackaging=jar -Dfile=ajdv-0.1.jar
+```
+
 
 
 B/S 
