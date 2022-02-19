@@ -26,5 +26,21 @@ docker run -d --name clickhouse-server \
 ## 运行
 docker exec -it clickhosue-server /bin/bash
 clickhouse-client
+
+# 下载vim
+apt-get update
+apt-get install vim -y
+```
+
+
+
+```
+grant select,insert on system.* to default WITH GRANT OPTION;
+
+CREATE USER dba IDENTIFIED WITH PLAINTEXT_PASSWORD BY '970810';
+GRANT SELECT ON *.* TO dba WITH GRANT OPTION;
+GRANT INSERT ON *.* TO dba WITH GRANT OPTION;
+GRANT CREATE ON *.* TO dba WITH GRANT OPTION;
+GRANT DELETE ON *.* TO dba WITH GRANT OPTION;
 ```
 
